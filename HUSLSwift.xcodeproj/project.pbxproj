@@ -51,7 +51,6 @@
 		CB8F1D451B2EB2D300B94CD1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Tests iOS/Info.plist"; sourceTree = SOURCE_ROOT; };
 		CB8F1D4A1B2EB7C800B94CD1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Source iOS/Info.plist"; sourceTree = SOURCE_ROOT; };
 		CB8F1D4B1B2EB7C800B94CD1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Source Mac/Info.plist"; sourceTree = SOURCE_ROOT; };
-		CBCAD52D1B2F6CD600D0366A /* HUSLSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HUSLSwift.playground; sourceTree = "<group>"; };
 		CBCAD5301B2F6E8100D0366A /* CGColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGColor.swift; path = Source/CGColor.swift; sourceTree = SOURCE_ROOT; };
 		CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSpaces.swift; path = Source/ColorSpaces.swift; sourceTree = SOURCE_ROOT; };
 		CBDA801C1B2D2C740010C653 /* HUSLSwiftMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUSLSwiftMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +115,6 @@
 		CBDA80121B2D2C740010C653 = {
 			isa = PBXGroup;
 			children = (
-				CBCAD52D1B2F6CD600D0366A /* HUSLSwift.playground */,
 				CBDA801E1B2D2C740010C653 /* Source */,
 				CBDA802A1B2D2C740010C653 /* Tests Mac */,
 				CB37B9121B2E7994009E63A5 /* Tests iOS */,
