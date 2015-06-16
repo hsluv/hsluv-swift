@@ -10,6 +10,7 @@ of [Clay Smith](https://github.com/stphnclysmth)
 TODO
 ----
 
+* Finish HUSLP implementation
 * Improve tests and add continuous integration testing
 * Add Cocoapods/Carthage support
 * Add usage documentation

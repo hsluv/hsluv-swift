@@ -24,7 +24,7 @@
 
 import Foundation
 import XCTest
-@testable import HUSLSwift
+import HUSLSwift
 
 class UIKitTests: XCTestCase {
   
