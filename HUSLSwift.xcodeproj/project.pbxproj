@@ -7,56 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB37B8FF1B2E76F2009E63A5 /* AppKit+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37B8FE1B2E76F2009E63A5 /* AppKit+extensions.swift */; };
-		CB37B90F1B2E7994009E63A5 /* HUSLSwiftiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB37B9051B2E7994009E63A5 /* HUSLSwiftiOS.framework */; };
 		CB37B91C1B2E79A5009E63A5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80361B2D2CBF0010C653 /* Constant.swift */; };
-		CB37B91D1B2E79A8009E63A5 /* HUSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80371B2D2CBF0010C653 /* HUSL.swift */; };
-		CB37B9231B2E7CE0009E63A5 /* UIKit+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37B9211B2E7CDA009E63A5 /* UIKit+extensions.swift */; };
-		CB8F1D3F1B2EB28A00B94CD1 /* MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F1D3D1B2EB28200B94CD1 /* MacTests.swift */; };
-		CB8F1D491B2EB2E200B94CD1 /* iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F1D431B2EB2CA00B94CD1 /* iOSTests.swift */; };
+		CB37B91D1B2E79A8009E63A5 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80371B2D2CBF0010C653 /* Math.swift */; };
+		CB6AB2841B3083890075AF04 /* HUSLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */; };
+		CB6AB28B1B3084020075AF04 /* AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783AD11B3078D5001F8BCB /* AppKit.swift */; };
+		CB6AB28D1B30847A0075AF04 /* HUSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6AB28C1B30847A0075AF04 /* HUSL.swift */; };
+		CB6AB28E1B30847C0075AF04 /* HUSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6AB28C1B30847A0075AF04 /* HUSL.swift */; };
+		CB6AB2A61B308A6F0075AF04 /* HUSLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB37B9051B2E7994009E63A5 /* HUSLSwift.framework */; };
+		CB6AB2AC1B308A820075AF04 /* UIKit+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783ACE1B307768001F8BCB /* UIKit+extensions.swift */; };
+		CB6AB2AD1B308B520075AF04 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783AD01B3078CF001F8BCB /* UIKit.swift */; };
+		CB6AB2AF1B308EA00075AF04 /* HUSL+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6AB2AE1B308EA00075AF04 /* HUSL+extensions.swift */; };
+		CB6AB2B01B308EDC0075AF04 /* NSColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783ACD1B30775F001F8BCB /* NSColor+extensions.swift */; };
+		CB6AB2B11B308EE50075AF04 /* HUSL+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6AB2AE1B308EA00075AF04 /* HUSL+extensions.swift */; };
+		CB6AB2B21B308EE80075AF04 /* NSColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783ACD1B30775F001F8BCB /* NSColor+extensions.swift */; };
+		CB6AB2B31B308FA70075AF04 /* UIKit+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783ACE1B307768001F8BCB /* UIKit+extensions.swift */; };
+		CB98BFB91B307B070027506A /* HUSLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */; };
+		CB98BFBF1B307B1D0027506A /* HUSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB604FB91B30734C009A99D1 /* HUSLTests.swift */; };
 		CBCAD5311B2F6E8100D0366A /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5301B2F6E8100D0366A /* CGColor.swift */; };
 		CBCAD5321B2F6EEA00D0366A /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5301B2F6E8100D0366A /* CGColor.swift */; };
 		CBCAD5341B2F88AB00D0366A /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */; };
 		CBCAD5351B2F88AD00D0366A /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */; };
-		CBDA80271B2D2C740010C653 /* HUSLSwiftMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDA801C1B2D2C740010C653 /* HUSLSwiftMac.framework */; };
 		CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80361B2D2CBF0010C653 /* Constant.swift */; };
-		CBDA80391B2D2CBF0010C653 /* HUSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80371B2D2CBF0010C653 /* HUSL.swift */; };
+		CBDA80391B2D2CBF0010C653 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80371B2D2CBF0010C653 /* Math.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CB37B9101B2E7994009E63A5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CBDA80131B2D2C740010C653 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB37B9041B2E7994009E63A5;
-			remoteInfo = "HUSLSwift iOS";
-		};
-		CBDA80281B2D2C740010C653 /* PBXContainerItemProxy */ = {
+		CB6AB2851B3083890075AF04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CBDA80131B2D2C740010C653 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CBDA801B1B2D2C740010C653;
-			remoteInfo = HUSLSwift;
+			remoteInfo = HUSLMac;
+		};
+		CB6AB2A71B308A6F0075AF04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBDA80131B2D2C740010C653 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB37B9041B2E7994009E63A5;
+			remoteInfo = HUSLiOS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB37B8FE1B2E76F2009E63A5 /* AppKit+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AppKit+extensions.swift"; path = "Source/AppKit+extensions.swift"; sourceTree = SOURCE_ROOT; };
-		CB37B9051B2E7994009E63A5 /* HUSLSwiftiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUSLSwiftiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB37B90E1B2E7994009E63A5 /* HUSLSwiftiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLSwiftiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB37B9211B2E7CDA009E63A5 /* UIKit+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIKit+extensions.swift"; path = "Source/UIKit+extensions.swift"; sourceTree = SOURCE_ROOT; };
-		CB8F1D3D1B2EB28200B94CD1 /* MacTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MacTests.swift; path = "Tests Mac/MacTests.swift"; sourceTree = SOURCE_ROOT; };
-		CB8F1D401B2EB29100B94CD1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Tests Mac/Info.plist"; sourceTree = SOURCE_ROOT; };
-		CB8F1D431B2EB2CA00B94CD1 /* iOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iOSTests.swift; path = "Tests iOS/iOSTests.swift"; sourceTree = SOURCE_ROOT; };
-		CB8F1D451B2EB2D300B94CD1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Tests iOS/Info.plist"; sourceTree = SOURCE_ROOT; };
-		CB8F1D4A1B2EB7C800B94CD1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Source iOS/Info.plist"; sourceTree = SOURCE_ROOT; };
-		CB8F1D4B1B2EB7C800B94CD1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Source Mac/Info.plist"; sourceTree = SOURCE_ROOT; };
+		CB37B9051B2E7994009E63A5 /* HUSLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUSLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB604FB91B30734C009A99D1 /* HUSLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HUSLTests.swift; path = Tests/HUSLTests.swift; sourceTree = SOURCE_ROOT; };
+		CB6AB27F1B3083890075AF04 /* HUSLMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6AB28C1B30847A0075AF04 /* HUSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HUSL.swift; path = Source/HUSL.swift; sourceTree = SOURCE_ROOT; };
+		CB6AB2A11B308A6F0075AF04 /* HUSLiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6AB2AE1B308EA00075AF04 /* HUSL+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HUSL+extensions.swift"; path = "Extensions/AppKit/HUSL+extensions.swift"; sourceTree = "<group>"; };
+		CB783AC91B307733001F8BCB /* HUSLSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HUSLSwift.playground; sourceTree = "<group>"; };
+		CB783ACD1B30775F001F8BCB /* NSColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NSColor+extensions.swift"; path = "Extensions/AppKit/NSColor+extensions.swift"; sourceTree = "<group>"; };
+		CB783ACE1B307768001F8BCB /* UIKit+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIKit+extensions.swift"; path = "Extensions/UIKit/UIKit+extensions.swift"; sourceTree = "<group>"; };
+		CB783ACF1B30777E001F8BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
+		CB783AD01B3078CF001F8BCB /* UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIKit.swift; path = Tests/iOSExtensions/UIKit.swift; sourceTree = SOURCE_ROOT; };
+		CB783AD11B3078D5001F8BCB /* AppKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppKit.swift; path = Tests/MacExtensions/AppKit.swift; sourceTree = SOURCE_ROOT; };
+		CB98BFB41B307B070027506A /* HUSLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCAD5301B2F6E8100D0366A /* CGColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGColor.swift; path = Source/CGColor.swift; sourceTree = SOURCE_ROOT; };
 		CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSpaces.swift; path = Source/ColorSpaces.swift; sourceTree = SOURCE_ROOT; };
-		CBDA801C1B2D2C740010C653 /* HUSLSwiftMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUSLSwiftMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBDA80261B2D2C740010C653 /* HUSLSwiftMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLSwiftMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCAD5371B2FBEBD00D0366A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBCAD5381B2FBEBD00D0366A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = "/Users/claysmith/Projects/husl-swift/LICENSE"; sourceTree = "<absolute>"; };
+		CBCAD53B1B2FBF0600D0366A /* HUSLSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HUSLSwift.podspec; sourceTree = "<group>"; };
+		CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUSLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDA80361B2D2CBF0010C653 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Source/Constant.swift; sourceTree = SOURCE_ROOT; };
-		CBDA80371B2D2CBF0010C653 /* HUSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HUSL.swift; path = Source/HUSL.swift; sourceTree = SOURCE_ROOT; };
+		CBDA80371B2D2CBF0010C653 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Math.swift; path = Source/Math.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +80,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB37B90B1B2E7994009E63A5 /* Frameworks */ = {
+		CB6AB27C1B3083890075AF04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB37B90F1B2E7994009E63A5 /* HUSLSwiftiOS.framework in Frameworks */,
+				CB6AB2841B3083890075AF04 /* HUSLSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6AB29E1B308A6F0075AF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6AB2A61B308A6F0075AF04 /* HUSLSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB98BFB11B307B070027506A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB98BFB91B307B070027506A /* HUSLSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,42 +111,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBDA80231B2D2C740010C653 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CBDA80271B2D2C740010C653 /* HUSLSwiftMac.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CB37B9121B2E7994009E63A5 /* Tests iOS */ = {
+		CB37B9121B2E7994009E63A5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				CB8F1D431B2EB2CA00B94CD1 /* iOSTests.swift */,
-				CB8F1D451B2EB2D300B94CD1 /* Info.plist */,
+				CBDA802A1B2D2C740010C653 /* AppKit */,
+				CB604FAA1B3071DC009A99D1 /* iOS */,
+				CB604FB91B30734C009A99D1 /* HUSLTests.swift */,
 			);
-			name = "Tests iOS";
+			name = Tests;
 			path = "HUSLSwift iOSTests";
+			sourceTree = "<group>";
+		};
+		CB604FAA1B3071DC009A99D1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB783AD01B3078CF001F8BCB /* UIKit.swift */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CB783ACA1B30773C001F8BCB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB783ACB1B30774B001F8BCB /* AppKit */,
+				CB783ACC1B307751001F8BCB /* UIKit */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		CB783ACB1B30774B001F8BCB /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				CB783ACD1B30775F001F8BCB /* NSColor+extensions.swift */,
+				CB6AB2AE1B308EA00075AF04 /* HUSL+extensions.swift */,
+			);
+			name = AppKit;
+			sourceTree = "<group>";
+		};
+		CB783ACC1B307751001F8BCB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CB783ACE1B307768001F8BCB /* UIKit+extensions.swift */,
+			);
+			name = UIKit;
 			sourceTree = "<group>";
 		};
 		CB8B96C41B2D59C7000F303C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB8F1D4A1B2EB7C800B94CD1 /* Info.plist */,
-				CB8F1D4B1B2EB7C800B94CD1 /* Info.plist */,
+				CB783ACF1B30777E001F8BCB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBCAD5361B2FBEAF00D0366A /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				CBCAD53B1B2FBF0600D0366A /* HUSLSwift.podspec */,
+				CBCAD5371B2FBEBD00D0366A /* README.md */,
+				CBCAD5381B2FBEBD00D0366A /* LICENSE */,
+			);
+			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
 		CBDA80121B2D2C740010C653 = {
 			isa = PBXGroup;
 			children = (
+				CB783AC91B307733001F8BCB /* HUSLSwift.playground */,
+				CBCAD5361B2FBEAF00D0366A /* Podspec Metadata */,
 				CBDA801E1B2D2C740010C653 /* Source */,
-				CBDA802A1B2D2C740010C653 /* Tests Mac */,
-				CB37B9121B2E7994009E63A5 /* Tests iOS */,
+				CB783ACA1B30773C001F8BCB /* Extensions */,
+				CB37B9121B2E7994009E63A5 /* Tests */,
 				CBDA801D1B2D2C740010C653 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,10 +192,11 @@
 		CBDA801D1B2D2C740010C653 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBDA801C1B2D2C740010C653 /* HUSLSwiftMac.framework */,
-				CBDA80261B2D2C740010C653 /* HUSLSwiftMacTests.xctest */,
-				CB37B9051B2E7994009E63A5 /* HUSLSwiftiOS.framework */,
-				CB37B90E1B2E7994009E63A5 /* HUSLSwiftiOSTests.xctest */,
+				CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */,
+				CB37B9051B2E7994009E63A5 /* HUSLSwift.framework */,
+				CB98BFB41B307B070027506A /* HUSLTests.xctest */,
+				CB6AB27F1B3083890075AF04 /* HUSLMacTests.xctest */,
+				CB6AB2A11B308A6F0075AF04 /* HUSLiOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,24 +206,22 @@
 			children = (
 				CBDA80361B2D2CBF0010C653 /* Constant.swift */,
 				CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */,
-				CBDA80371B2D2CBF0010C653 /* HUSL.swift */,
+				CBDA80371B2D2CBF0010C653 /* Math.swift */,
+				CB6AB28C1B30847A0075AF04 /* HUSL.swift */,
 				CBCAD5301B2F6E8100D0366A /* CGColor.swift */,
-				CB37B8FE1B2E76F2009E63A5 /* AppKit+extensions.swift */,
-				CB37B9211B2E7CDA009E63A5 /* UIKit+extensions.swift */,
 				CB8B96C41B2D59C7000F303C /* Supporting Files */,
 			);
 			name = Source;
 			path = HUSLSwift;
 			sourceTree = "<group>";
 		};
-		CBDA802A1B2D2C740010C653 /* Tests Mac */ = {
+		CBDA802A1B2D2C740010C653 /* AppKit */ = {
 			isa = PBXGroup;
 			children = (
-				CB8F1D3D1B2EB28200B94CD1 /* MacTests.swift */,
-				CB8F1D401B2EB29100B94CD1 /* Info.plist */,
+				CB783AD11B3078D5001F8BCB /* AppKit.swift */,
 			);
-			name = "Tests Mac";
-			path = HUSLSwiftTests;
+			name = AppKit;
+			path = ../HUSLSwiftTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +244,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CB37B9041B2E7994009E63A5 /* HUSLSwiftiOS */ = {
+		CB37B9041B2E7994009E63A5 /* HUSLiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB37B9161B2E7995009E63A5 /* Build configuration list for PBXNativeTarget "HUSLSwiftiOS" */;
+			buildConfigurationList = CB37B9161B2E7995009E63A5 /* Build configuration list for PBXNativeTarget "HUSLiOS" */;
 			buildPhases = (
 				CB37B9001B2E7994009E63A5 /* Sources */,
 				CB37B9011B2E7994009E63A5 /* Frameworks */,
@@ -191,32 +257,67 @@
 			);
 			dependencies = (
 			);
-			name = HUSLSwiftiOS;
+			name = HUSLiOS;
 			productName = "HUSLSwift iOS";
-			productReference = CB37B9051B2E7994009E63A5 /* HUSLSwiftiOS.framework */;
+			productReference = CB37B9051B2E7994009E63A5 /* HUSLSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CB37B90D1B2E7994009E63A5 /* HUSLSwiftiOSTests */ = {
+		CB6AB27E1B3083890075AF04 /* HUSLMacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB37B9191B2E7995009E63A5 /* Build configuration list for PBXNativeTarget "HUSLSwiftiOSTests" */;
+			buildConfigurationList = CB6AB2891B3083890075AF04 /* Build configuration list for PBXNativeTarget "HUSLMacTests" */;
 			buildPhases = (
-				CB37B90A1B2E7994009E63A5 /* Sources */,
-				CB37B90B1B2E7994009E63A5 /* Frameworks */,
-				CB37B90C1B2E7994009E63A5 /* Resources */,
+				CB6AB27B1B3083890075AF04 /* Sources */,
+				CB6AB27C1B3083890075AF04 /* Frameworks */,
+				CB6AB27D1B3083890075AF04 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CB37B9111B2E7994009E63A5 /* PBXTargetDependency */,
+				CB6AB2861B3083890075AF04 /* PBXTargetDependency */,
 			);
-			name = HUSLSwiftiOSTests;
-			productName = "HUSLSwift iOSTests";
-			productReference = CB37B90E1B2E7994009E63A5 /* HUSLSwiftiOSTests.xctest */;
+			name = HUSLMacTests;
+			productName = HUSLMacTests;
+			productReference = CB6AB27F1B3083890075AF04 /* HUSLMacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CBDA801B1B2D2C740010C653 /* HUSLSwiftMac */ = {
+		CB6AB2A01B308A6F0075AF04 /* HUSLiOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBDA80301B2D2C740010C653 /* Build configuration list for PBXNativeTarget "HUSLSwiftMac" */;
+			buildConfigurationList = CB6AB2A91B308A6F0075AF04 /* Build configuration list for PBXNativeTarget "HUSLiOSTests" */;
+			buildPhases = (
+				CB6AB29D1B308A6F0075AF04 /* Sources */,
+				CB6AB29E1B308A6F0075AF04 /* Frameworks */,
+				CB6AB29F1B308A6F0075AF04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB6AB2A81B308A6F0075AF04 /* PBXTargetDependency */,
+			);
+			name = HUSLiOSTests;
+			productName = HUSLiOSTests;
+			productReference = CB6AB2A11B308A6F0075AF04 /* HUSLiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB98BFB31B307B070027506A /* HUSLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB98BFBC1B307B070027506A /* Build configuration list for PBXNativeTarget "HUSLTests" */;
+			buildPhases = (
+				CB98BFB01B307B070027506A /* Sources */,
+				CB98BFB11B307B070027506A /* Frameworks */,
+				CB98BFB21B307B070027506A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HUSLTests;
+			productName = HUSLTests;
+			productReference = CB98BFB41B307B070027506A /* HUSLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBDA801B1B2D2C740010C653 /* HUSLMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBDA80301B2D2C740010C653 /* Build configuration list for PBXNativeTarget "HUSLMac" */;
 			buildPhases = (
 				CBDA80171B2D2C740010C653 /* Sources */,
 				CBDA80181B2D2C740010C653 /* Frameworks */,
@@ -227,28 +328,10 @@
 			);
 			dependencies = (
 			);
-			name = HUSLSwiftMac;
+			name = HUSLMac;
 			productName = HUSLSwift;
-			productReference = CBDA801C1B2D2C740010C653 /* HUSLSwiftMac.framework */;
+			productReference = CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		CBDA80251B2D2C740010C653 /* HUSLSwiftMacTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CBDA80331B2D2C740010C653 /* Build configuration list for PBXNativeTarget "HUSLSwiftMacTests" */;
-			buildPhases = (
-				CBDA80221B2D2C740010C653 /* Sources */,
-				CBDA80231B2D2C740010C653 /* Frameworks */,
-				CBDA80241B2D2C740010C653 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CBDA80291B2D2C740010C653 /* PBXTargetDependency */,
-			);
-			name = HUSLSwiftMacTests;
-			productName = HUSLSwiftTests;
-			productReference = CBDA80261B2D2C740010C653 /* HUSLSwiftMacTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -264,15 +347,18 @@
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 9HWYXRWL2V;
 					};
-					CB37B90D1B2E7994009E63A5 = {
+					CB6AB27E1B3083890075AF04 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					CB6AB2A01B308A6F0075AF04 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					CB98BFB31B307B070027506A = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					CBDA801B1B2D2C740010C653 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 9HWYXRWL2V;
-					};
-					CBDA80251B2D2C740010C653 = {
-						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
@@ -288,10 +374,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBDA801B1B2D2C740010C653 /* HUSLSwiftMac */,
-				CBDA80251B2D2C740010C653 /* HUSLSwiftMacTests */,
-				CB37B9041B2E7994009E63A5 /* HUSLSwiftiOS */,
-				CB37B90D1B2E7994009E63A5 /* HUSLSwiftiOSTests */,
+				CBDA801B1B2D2C740010C653 /* HUSLMac */,
+				CB37B9041B2E7994009E63A5 /* HUSLiOS */,
+				CB98BFB31B307B070027506A /* HUSLTests */,
+				CB6AB27E1B3083890075AF04 /* HUSLMacTests */,
+				CB6AB2A01B308A6F0075AF04 /* HUSLiOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -304,7 +391,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB37B90C1B2E7994009E63A5 /* Resources */ = {
+		CB6AB27D1B3083890075AF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6AB29F1B308A6F0075AF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB98BFB21B307B070027506A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -312,13 +413,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CBDA801A1B2D2C740010C653 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CBDA80241B2D2C740010C653 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -334,17 +428,37 @@
 			files = (
 				CBCAD5351B2F88AD00D0366A /* ColorSpaces.swift in Sources */,
 				CB37B91C1B2E79A5009E63A5 /* Constant.swift in Sources */,
-				CB37B9231B2E7CE0009E63A5 /* UIKit+extensions.swift in Sources */,
+				CB6AB2B31B308FA70075AF04 /* UIKit+extensions.swift in Sources */,
 				CBCAD5321B2F6EEA00D0366A /* CGColor.swift in Sources */,
-				CB37B91D1B2E79A8009E63A5 /* HUSL.swift in Sources */,
+				CB37B91D1B2E79A8009E63A5 /* Math.swift in Sources */,
+				CB6AB28E1B30847C0075AF04 /* HUSL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB37B90A1B2E7994009E63A5 /* Sources */ = {
+		CB6AB27B1B3083890075AF04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8F1D491B2EB2E200B94CD1 /* iOSTests.swift in Sources */,
+				CB6AB28B1B3084020075AF04 /* AppKit.swift in Sources */,
+				CB6AB2B21B308EE80075AF04 /* NSColor+extensions.swift in Sources */,
+				CB6AB2B11B308EE50075AF04 /* HUSL+extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6AB29D1B308A6F0075AF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6AB2AD1B308B520075AF04 /* UIKit.swift in Sources */,
+				CB6AB2AC1B308A820075AF04 /* UIKit+extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB98BFB01B307B070027506A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB98BFBF1B307B1D0027506A /* HUSLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,33 +467,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBCAD5341B2F88AB00D0366A /* ColorSpaces.swift in Sources */,
+				CB6AB2B01B308EDC0075AF04 /* NSColor+extensions.swift in Sources */,
 				CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */,
-				CB37B8FF1B2E76F2009E63A5 /* AppKit+extensions.swift in Sources */,
 				CBCAD5311B2F6E8100D0366A /* CGColor.swift in Sources */,
-				CBDA80391B2D2CBF0010C653 /* HUSL.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CBDA80221B2D2C740010C653 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB8F1D3F1B2EB28A00B94CD1 /* MacTests.swift in Sources */,
+				CBDA80391B2D2CBF0010C653 /* Math.swift in Sources */,
+				CB6AB28D1B30847A0075AF04 /* HUSL.swift in Sources */,
+				CB6AB2AF1B308EA00075AF04 /* HUSL+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CB37B9111B2E7994009E63A5 /* PBXTargetDependency */ = {
+		CB6AB2861B3083890075AF04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB37B9041B2E7994009E63A5 /* HUSLSwiftiOS */;
-			targetProxy = CB37B9101B2E7994009E63A5 /* PBXContainerItemProxy */;
+			target = CBDA801B1B2D2C740010C653 /* HUSLMac */;
+			targetProxy = CB6AB2851B3083890075AF04 /* PBXContainerItemProxy */;
 		};
-		CBDA80291B2D2C740010C653 /* PBXTargetDependency */ = {
+		CB6AB2A81B308A6F0075AF04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBDA801B1B2D2C740010C653 /* HUSLSwiftMac */;
-			targetProxy = CBDA80281B2D2C740010C653 /* PBXContainerItemProxy */;
+			target = CB37B9041B2E7994009E63A5 /* HUSLiOS */;
+			targetProxy = CB6AB2A71B308A6F0075AF04 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,12 +501,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftiOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HUSLSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -416,12 +523,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftiOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HUSLSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -431,49 +537,84 @@
 			};
 			name = Release;
 		};
-		CB37B91A1B2E7995009E63A5 /* Debug */ = {
+		CB6AB2871B3083890075AF04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Tests iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.claysmith.HUSLSwift-iOSTests";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLMacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
-		CB37B91B1B2E7995009E63A5 /* Release */ = {
+		CB6AB2881B3083890075AF04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Tests iOS/Info.plist";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB6AB2AA1B308A6F0075AF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.claysmith.HUSLSwift-iOSTests";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		CB6AB2AB1B308A6F0075AF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		CB98BFBD1B307B070027506A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB98BFBE1B307B070027506A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		CBDA802E1B2D2C740010C653 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -490,6 +631,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -506,7 +648,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -522,7 +663,6 @@
 		CBDA802F1B2D2C740010C653 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -539,6 +679,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -549,7 +690,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
@@ -571,12 +711,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source Mac/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftMac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HUSLSwift;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -593,45 +732,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source Mac/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftMac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HUSLSwift;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-			};
-			name = Release;
-		};
-		CBDA80341B2D2C740010C653 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Tests Mac/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = macosx;
-			};
-			name = Debug;
-		};
-		CBDA80351B2D2C740010C653 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Tests Mac/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Release;
@@ -639,7 +745,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB37B9161B2E7995009E63A5 /* Build configuration list for PBXNativeTarget "HUSLSwiftiOS" */ = {
+		CB37B9161B2E7995009E63A5 /* Build configuration list for PBXNativeTarget "HUSLiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB37B9171B2E7995009E63A5 /* Debug */,
@@ -648,11 +754,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB37B9191B2E7995009E63A5 /* Build configuration list for PBXNativeTarget "HUSLSwiftiOSTests" */ = {
+		CB6AB2891B3083890075AF04 /* Build configuration list for PBXNativeTarget "HUSLMacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB37B91A1B2E7995009E63A5 /* Debug */,
-				CB37B91B1B2E7995009E63A5 /* Release */,
+				CB6AB2871B3083890075AF04 /* Debug */,
+				CB6AB2881B3083890075AF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB6AB2A91B308A6F0075AF04 /* Build configuration list for PBXNativeTarget "HUSLiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6AB2AA1B308A6F0075AF04 /* Debug */,
+				CB6AB2AB1B308A6F0075AF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB98BFBC1B307B070027506A /* Build configuration list for PBXNativeTarget "HUSLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB98BFBD1B307B070027506A /* Debug */,
+				CB98BFBE1B307B070027506A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -666,20 +790,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBDA80301B2D2C740010C653 /* Build configuration list for PBXNativeTarget "HUSLSwiftMac" */ = {
+		CBDA80301B2D2C740010C653 /* Build configuration list for PBXNativeTarget "HUSLMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBDA80311B2D2C740010C653 /* Debug */,
 				CBDA80321B2D2C740010C653 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CBDA80331B2D2C740010C653 /* Build configuration list for PBXNativeTarget "HUSLSwiftMacTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CBDA80341B2D2C740010C653 /* Debug */,
-				CBDA80351B2D2C740010C653 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

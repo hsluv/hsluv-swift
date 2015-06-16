@@ -22,9 +22,10 @@
 // SOFTWARE.
 //
 
-import AppKit
+import UIKit
+import HUSLSwift
 
-public extension NSColor {
+public extension UIColor {
   /// Initializes and returns a color object using the specified opacity and
   /// HUSL color space component values.
   ///
@@ -33,7 +34,8 @@ public extension NSColor {
   /// - parameter lightness: CGFloat
   /// - parameter alpha: CGFloat
   convenience init?(hue: CGFloat, saturation: CGFloat, lightness: CGFloat, alpha: CGFloat) {
-    if let color = huslToCGColor(hue: Double(hue), saturation: Double(saturation), lightness: Double(lightness), alpha: Double(alpha)) {
+    let husl = HUSL(hue: Double(hue), saturation: Double(saturation), lightness: Double(lightness), alpha: Double(alpha))
+    if let color = husl.CGColor {
       self.init(CGColor: color)
     } else {
       return nil
@@ -50,7 +52,17 @@ public extension NSColor {
     var alpha: CGFloat = 0.0
     
     self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-    
+
     return (red: red, green: green, blue: blue, alpha: alpha)
+  }
+}
+
+public extension HUSL {
+  public var UIColor: UIKit.UIColor? {
+    if let color = self.CGColor {
+      return UIKit.UIColor(CGColor: color)
+    }
+    
+    return nil
   }
 }

@@ -25,13 +25,15 @@
 // Using structs instead of tuples prevents implicit conversion,
 // which was making debugging difficult
 
+import Foundation
+
 typealias Tuple = (Double, Double, Double)
 
 protocol Deconstructable {
   var tuple: Tuple { get }
 }
 
-struct HUSL: Deconstructable {
+struct HUSLTuple: Deconstructable {
   var H: Double
   var S: Double
   var L: Double
@@ -47,7 +49,7 @@ struct HUSL: Deconstructable {
   }
 }
 
-struct XYZ: Deconstructable {
+struct XYZTuple: Deconstructable {
   var X: Double
   var Y: Double
   var Z: Double
@@ -63,7 +65,7 @@ struct XYZ: Deconstructable {
   }
 }
 
-struct RGB: Deconstructable {
+struct RGBTuple: Deconstructable {
   var R: Double
   var G: Double
   var B: Double
@@ -79,7 +81,7 @@ struct RGB: Deconstructable {
   }
 }
 
-struct LCH: Deconstructable {
+struct LCHTuple: Deconstructable {
   var L: Double
   var C: Double
   var H: Double
@@ -95,7 +97,7 @@ struct LCH: Deconstructable {
   }
 }
 
-struct LUV: Deconstructable {
+struct LUVTuple: Deconstructable {
   var L: Double
   var U: Double
   var V: Double
