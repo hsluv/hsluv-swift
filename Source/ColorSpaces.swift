@@ -33,6 +33,7 @@ protocol Deconstructable {
   var tuple: Tuple { get }
 }
 
+/// Hue(man), Saturation, Lightness (HUSL)
 struct HUSLTuple: Deconstructable {
   var H: Double
   var S: Double
@@ -49,6 +50,7 @@ struct HUSLTuple: Deconstructable {
   }
 }
 
+/// Luminance, Blue-stimulation, Cone-response [CIE 1931] (XYZ)
 struct XYZTuple: Deconstructable {
   var X: Double
   var Y: Double
@@ -65,6 +67,7 @@ struct XYZTuple: Deconstructable {
   }
 }
 
+/// Red, Green, Blue (RGB)
 struct RGBTuple: Deconstructable {
   var R: Double
   var G: Double
@@ -81,6 +84,7 @@ struct RGBTuple: Deconstructable {
   }
 }
 
+/// Lightness, Chroma, Hue (LCH)
 struct LCHTuple: Deconstructable {
   var L: Double
   var C: Double
@@ -97,6 +101,7 @@ struct LCHTuple: Deconstructable {
   }
 }
 
+/// L*, u*, v* [CIE 1976] (LUV)
 struct LUVTuple: Deconstructable {
   var L: Double
   var U: Double
@@ -112,3 +117,9 @@ struct LUVTuple: Deconstructable {
     return (L, U, V)
   }
 }
+
+/// Hexadecimal color
+struct Hex {
+  let string: String
+}
+

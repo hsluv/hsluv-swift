@@ -66,7 +66,7 @@ func lengthOfRayUntilIntersect(theta: Double, line: Vector) -> Double? {
   return len
 }
 
-// MARK: RGBTuple chroma methods
+// MARK: RGB methods
 
 /// For given lightness, returns the maximum chroma. Keeping the chroma value
 /// below this number will ensure that for any hue, the color is within the RGBTuple
@@ -126,6 +126,32 @@ func toLinear(c: Double) -> Double {
   }
   
   return c / 12.92
+}
+
+// Used for conversion of RGBTuple to Hex
+func round(value:Double, places:Int) -> Double {
+  let divisor = pow(10.0, Double(places))
+  return round(value * divisor) / divisor
+}
+
+func rgbPrepare(rgb: RGBTuple) -> RGBTuple {
+  let rounded = [rgb.tuple.0, rgb.tuple.1, rgb.tuple.1].map { (var channel: Double) -> Double in
+    channel = round(channel, places: 3)
+    
+    if channel < -0.0001 || channel > 1.0001 {
+      // TODO: Implement Swift errors
+      fatalError("Illegal RGB tolerance")
+    }
+    
+    if channel < 0 { channel = 0 }
+    if channel > 1 { channel = 1 }
+    
+    channel = round(channel * 255.0)
+    
+    return channel
+  }
+  
+  return RGBTuple(rounded[0], rounded[1], rounded[2])
 }
 
 // MARK: - CIELUVTuple
@@ -240,6 +266,14 @@ func luvToLch(luv: LUVTuple) -> LCHTuple {
 func huslToLch(husl: HUSLTuple) -> LCHTuple {
   let (H, S, L) = husl.tuple
   
+  guard L <= 99.9999999 else {
+    return LCHTuple(100, 0, H)
+  }
+  
+  guard L >= 0.00000001 else {
+    return LCHTuple(0, 0, H)
+  }
+  
   let max = maxChroma(lightness: L, hue: H)
   let C = max / 100 * S
   
@@ -248,6 +282,14 @@ func huslToLch(husl: HUSLTuple) -> LCHTuple {
 
 func lchToHusl(lch: LCHTuple) -> HUSLTuple {
   let (L, C, H) = lch.tuple
+
+  guard L <= 99.9999999 else {
+    return HUSLTuple(H, 0, 100)
+  }
+  
+  guard L >= 0.00000001 else {
+    return HUSLTuple(H, 0, 0)
+  }
   
   let max = maxChroma(lightness: L, hue: H)
   let S = C / max * 100
@@ -259,6 +301,14 @@ func lchToHusl(lch: LCHTuple) -> HUSLTuple {
 func huslpToLch(husl: HUSLTuple) -> LCHTuple {
   let (H, S, L) = husl.tuple
   
+  guard L <= 99.9999999 else {
+    return LCHTuple(100, 0, H)
+  }
+  
+  guard L >= 0.00000001 else {
+    return LCHTuple(0, 0, H)
+  }
+  
   let max = maxChroma(lightness: L)
   let C = max / 100 * S
   
@@ -268,11 +318,44 @@ func huslpToLch(husl: HUSLTuple) -> LCHTuple {
 func lchToHuslp(lch: LCHTuple) -> HUSLTuple {
   let (L, C, H) = lch.tuple
   
+  guard L <= 99.9999999 else {
+    return HUSLTuple(H, 0, 100)
+  }
+  
+  guard L >= 0.00000001 else {
+    return HUSLTuple(H, 0, 0)
+  }
+  
   let max = maxChroma(lightness: L)
   let S = C / max * 100
 
   return HUSLTuple(H, S, L)
 }
 
+// MARK: - Hex/RGB Conversion
 
+// This function is based on a comment by mehawk on gist arshad/de147c42d7b3063ef7bc.
+// It is so flippin' elegant.
+func hexToRgb(hex: Hex) -> RGBTuple {
+  let string = hex.string.stringByReplacingOccurrencesOfString("#", withString: "")
+  
+  var rgbValue:UInt32 = 0
+  NSScanner(string: string).scanHexInt(&rgbValue)
+  
+  return RGBTuple(
+    Double((rgbValue & 0xFF0000) >> 16) / 255.0,
+    Double((rgbValue & 0x00FF00) >> 8)  / 255.0,
+    Double( rgbValue & 0x0000FF)        / 255.0
+  )
+}
+
+func rgbToHex(rgb: RGBTuple) -> Hex {
+  let rgb = rgbPrepare(rgb)
+  
+  let R = String(format: "%02d", rgb.R)
+  let G = String(format: "%02d", rgb.G)
+  let B = String(format: "%02d", rgb.B)
+  
+  return Hex(string: "#\(R)\(G)\(B)")
+}
 

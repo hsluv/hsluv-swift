@@ -14,12 +14,9 @@
 		CB6AB28D1B30847A0075AF04 /* HUSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6AB28C1B30847A0075AF04 /* HUSL.swift */; };
 		CB6AB28E1B30847C0075AF04 /* HUSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6AB28C1B30847A0075AF04 /* HUSL.swift */; };
 		CB6AB2A61B308A6F0075AF04 /* HUSLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB37B9051B2E7994009E63A5 /* HUSLSwift.framework */; };
-		CB6AB2AC1B308A820075AF04 /* UIKit+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783ACE1B307768001F8BCB /* UIKit+extensions.swift */; };
 		CB6AB2AD1B308B520075AF04 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783AD01B3078CF001F8BCB /* UIKit.swift */; };
 		CB6AB2AF1B308EA00075AF04 /* HUSL+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6AB2AE1B308EA00075AF04 /* HUSL+extensions.swift */; };
 		CB6AB2B01B308EDC0075AF04 /* NSColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783ACD1B30775F001F8BCB /* NSColor+extensions.swift */; };
-		CB6AB2B11B308EE50075AF04 /* HUSL+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6AB2AE1B308EA00075AF04 /* HUSL+extensions.swift */; };
-		CB6AB2B21B308EE80075AF04 /* NSColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783ACD1B30775F001F8BCB /* NSColor+extensions.swift */; };
 		CB6AB2B31B308FA70075AF04 /* UIKit+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783ACE1B307768001F8BCB /* UIKit+extensions.swift */; };
 		CB98BFB91B307B070027506A /* HUSLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */; };
 		CB98BFBF1B307B1D0027506A /* HUSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB604FB91B30734C009A99D1 /* HUSLTests.swift */; };
@@ -27,26 +24,10 @@
 		CBCAD5321B2F6EEA00D0366A /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5301B2F6E8100D0366A /* CGColor.swift */; };
 		CBCAD5341B2F88AB00D0366A /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */; };
 		CBCAD5351B2F88AD00D0366A /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */; };
+		CBD1E3081B30B3B000E49F9B /* snapshot-rev3.json in Resources */ = {isa = PBXBuildFile; fileRef = CBD1E3071B30B2D300E49F9B /* snapshot-rev3.json */; };
 		CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80361B2D2CBF0010C653 /* Constant.swift */; };
 		CBDA80391B2D2CBF0010C653 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80371B2D2CBF0010C653 /* Math.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CB6AB2851B3083890075AF04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CBDA80131B2D2C740010C653 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CBDA801B1B2D2C740010C653;
-			remoteInfo = HUSLMac;
-		};
-		CB6AB2A71B308A6F0075AF04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CBDA80131B2D2C740010C653 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB37B9041B2E7994009E63A5;
-			remoteInfo = HUSLiOS;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CB37B9051B2E7994009E63A5 /* HUSLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUSLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +36,6 @@
 		CB6AB28C1B30847A0075AF04 /* HUSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HUSL.swift; path = Source/HUSL.swift; sourceTree = SOURCE_ROOT; };
 		CB6AB2A11B308A6F0075AF04 /* HUSLiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6AB2AE1B308EA00075AF04 /* HUSL+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HUSL+extensions.swift"; path = "Extensions/AppKit/HUSL+extensions.swift"; sourceTree = "<group>"; };
-		CB783AC91B307733001F8BCB /* HUSLSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HUSLSwift.playground; sourceTree = "<group>"; };
 		CB783ACD1B30775F001F8BCB /* NSColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NSColor+extensions.swift"; path = "Extensions/AppKit/NSColor+extensions.swift"; sourceTree = "<group>"; };
 		CB783ACE1B307768001F8BCB /* UIKit+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIKit+extensions.swift"; path = "Extensions/UIKit/UIKit+extensions.swift"; sourceTree = "<group>"; };
 		CB783ACF1B30777E001F8BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -67,6 +47,7 @@
 		CBCAD5371B2FBEBD00D0366A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CBCAD5381B2FBEBD00D0366A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = "/Users/claysmith/Projects/husl-swift/LICENSE"; sourceTree = "<absolute>"; };
 		CBCAD53B1B2FBF0600D0366A /* HUSLSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HUSLSwift.podspec; sourceTree = "<group>"; };
+		CBD1E3071B30B2D300E49F9B /* snapshot-rev3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "snapshot-rev3.json"; path = "Tests/Assets/snapshot-rev3.json"; sourceTree = SOURCE_ROOT; };
 		CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUSLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDA80361B2D2CBF0010C653 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Source/Constant.swift; sourceTree = SOURCE_ROOT; };
 		CBDA80371B2D2CBF0010C653 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Math.swift; path = Source/Math.swift; sourceTree = SOURCE_ROOT; };
@@ -117,6 +98,7 @@
 		CB37B9121B2E7994009E63A5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				CBD1E3061B30B2C800E49F9B /* Assets */,
 				CBDA802A1B2D2C740010C653 /* AppKit */,
 				CB604FAA1B3071DC009A99D1 /* iOS */,
 				CB604FB91B30734C009A99D1 /* HUSLTests.swift */,
@@ -177,10 +159,17 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		CBD1E3061B30B2C800E49F9B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1E3071B30B2D300E49F9B /* snapshot-rev3.json */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		CBDA80121B2D2C740010C653 = {
 			isa = PBXGroup;
 			children = (
-				CB783AC91B307733001F8BCB /* HUSLSwift.playground */,
 				CBCAD5361B2FBEAF00D0366A /* Podspec Metadata */,
 				CBDA801E1B2D2C740010C653 /* Source */,
 				CB783ACA1B30773C001F8BCB /* Extensions */,
@@ -273,7 +262,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				CB6AB2861B3083890075AF04 /* PBXTargetDependency */,
 			);
 			name = HUSLMacTests;
 			productName = HUSLMacTests;
@@ -291,7 +279,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				CB6AB2A81B308A6F0075AF04 /* PBXTargetDependency */,
 			);
 			name = HUSLiOSTests;
 			productName = HUSLiOSTests;
@@ -409,6 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD1E3081B30B3B000E49F9B /* snapshot-rev3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,12 +414,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBCAD5351B2F88AD00D0366A /* ColorSpaces.swift in Sources */,
 				CB37B91C1B2E79A5009E63A5 /* Constant.swift in Sources */,
-				CB6AB2B31B308FA70075AF04 /* UIKit+extensions.swift in Sources */,
-				CBCAD5321B2F6EEA00D0366A /* CGColor.swift in Sources */,
+				CBCAD5351B2F88AD00D0366A /* ColorSpaces.swift in Sources */,
 				CB37B91D1B2E79A8009E63A5 /* Math.swift in Sources */,
+				CBCAD5321B2F6EEA00D0366A /* CGColor.swift in Sources */,
 				CB6AB28E1B30847C0075AF04 /* HUSL.swift in Sources */,
+				CB6AB2B31B308FA70075AF04 /* UIKit+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,8 +428,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6AB28B1B3084020075AF04 /* AppKit.swift in Sources */,
-				CB6AB2B21B308EE80075AF04 /* NSColor+extensions.swift in Sources */,
-				CB6AB2B11B308EE50075AF04 /* HUSL+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +436,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6AB2AD1B308B520075AF04 /* UIKit.swift in Sources */,
-				CB6AB2AC1B308A820075AF04 /* UIKit+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,44 +451,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBCAD5341B2F88AB00D0366A /* ColorSpaces.swift in Sources */,
-				CB6AB2B01B308EDC0075AF04 /* NSColor+extensions.swift in Sources */,
 				CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */,
-				CBCAD5311B2F6E8100D0366A /* CGColor.swift in Sources */,
+				CBCAD5341B2F88AB00D0366A /* ColorSpaces.swift in Sources */,
 				CBDA80391B2D2CBF0010C653 /* Math.swift in Sources */,
+				CBCAD5311B2F6E8100D0366A /* CGColor.swift in Sources */,
 				CB6AB28D1B30847A0075AF04 /* HUSL.swift in Sources */,
+				CB6AB2B01B308EDC0075AF04 /* NSColor+extensions.swift in Sources */,
 				CB6AB2AF1B308EA00075AF04 /* HUSL+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		CB6AB2861B3083890075AF04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CBDA801B1B2D2C740010C653 /* HUSLMac */;
-			targetProxy = CB6AB2851B3083890075AF04 /* PBXContainerItemProxy */;
-		};
-		CB6AB2A81B308A6F0075AF04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB37B9041B2E7994009E63A5 /* HUSLiOS */;
-			targetProxy = CB6AB2A71B308A6F0075AF04 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		CB37B9171B2E7995009E63A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftiOS;
 				PRODUCT_NAME = HUSLSwift;
 				SDKROOT = iphoneos;
@@ -518,14 +489,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftiOS;
 				PRODUCT_NAME = HUSLSwift;
 				SDKROOT = iphoneos;
@@ -541,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -553,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -565,12 +537,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -578,6 +552,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -585,6 +560,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -592,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -604,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -631,7 +609,6 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -679,7 +656,6 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -704,7 +680,6 @@
 		CBDA80311B2D2C740010C653 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -713,7 +688,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftMac;
 				PRODUCT_NAME = HUSLSwift;
 				SKIP_INSTALL = YES;
@@ -725,7 +700,6 @@
 		CBDA80321B2D2C740010C653 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -734,7 +708,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftMac;
 				PRODUCT_NAME = HUSLSwift;
 				SKIP_INSTALL = YES;

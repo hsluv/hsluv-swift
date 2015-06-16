@@ -23,26 +23,52 @@
 //
 
 import Foundation
-import CoreGraphics
 
 public struct HUSL {
-  let hue: Double
-  let saturation: Double
-  let lightness: Double
-  let alpha: Double
+  public let hue: Double
+  public let saturation: Double
+  public let lightness: Double
+  public let alpha: Double
+  private let husl: HUSLTuple
   
   public init(hue: Double, saturation: Double, lightness: Double, alpha: Double = 1.0) {
     self.hue = hue
     self.saturation = saturation
     self.lightness = lightness
     self.alpha = alpha
+    
+    self.husl = HUSLTuple(hue, saturation, lightness)
   }
   
   public init(_ hue: Double, _ saturation: Double, _ lightness: Double, _ alpha: Double = 1.0) {
     self.init(hue: hue, saturation: saturation, lightness: lightness, alpha: alpha)
   }
   
-  public var CGColor: CGColorRef? {
-    return huslToCGColor(hue: hue, saturation: saturation, lightness: lightness, alpha: 1.0)
+  public init(red: Double, green: Double, blue: Double, alpha: Double = 1.0) {
+    let (hue, saturation, lightness) = rgbToHusl(RGBTuple(red, green, blue)).tuple
+    self.init(hue: hue, saturation: saturation, lightness: lightness, alpha: alpha)
+  }
+
+  // MARK: - Conversion
+  public var RGB: (R: Double, G: Double, B: Double) {
+    return huslToRgb(husl).tuple
+  }
+  
+  public var LCH: (L: Double, C: Double, H: Double) {
+    return huslToLch(husl).tuple
+  }
+  
+  public var LUV: (L: Double, U: Double, V: Double) {
+    return lchToLuv(huslToLch(husl)).tuple
+  }
+  
+  public var XYZ: (X: Double, Y: Double, Z: Double) {
+    return  rgbToXyz(huslToRgb(husl)).tuple
+  }
+}
+
+extension HUSL: CustomStringConvertible {
+  public var description: String {
+    return "HUSLA(\(hue), \(saturation), \(lightness), \(alpha))"
   }
 }
