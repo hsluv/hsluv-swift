@@ -23,7 +23,6 @@
 //
 
 import AppKit
-import HUSLSwift
 
 public extension HUSL {
   public var NSColor: AppKit.NSColor? {

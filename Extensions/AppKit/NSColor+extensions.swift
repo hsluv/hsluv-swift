@@ -23,7 +23,6 @@
 //
 
 import AppKit
-import HUSLSwift
 
 public extension NSColor {
   /// Initializes and returns a color object using the specified opacity and
