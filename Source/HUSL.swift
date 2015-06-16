@@ -71,7 +71,7 @@ func lengthOfRayUntilIntersect(theta: Double, line: Vector) -> Double? {
 /// For given lightness, returns the maximum chroma. Keeping the chroma value
 /// below this number will ensure that for any hue, the color is within the RGB
 /// gamut.
-func maxChroma(L: Double) -> Double {
+func maxChroma(lightness L: Double) -> Double {
   var lengths = [Double]()
   
   for bound in getBounds(L) {
@@ -85,7 +85,7 @@ func maxChroma(L: Double) -> Double {
 
 /// For a given lightness and hue, return the maximum chroma that fits in
 /// the RGB gamut.
-func maxChroma(L: Double, _ H: Double) -> Double {
+func maxChroma(lightness L: Double, hue H: Double) -> Double {
   let hrad = H / 360 * M_2_PI
   
   var lengths = [Double]()
@@ -240,7 +240,7 @@ func luvToLch(luv: LUV) -> LCH {
 func huslToLch(husl: HUSL) -> LCH {
   let (H, S, L) = husl.tuple
   
-  let max = maxChroma(L, H)
+  let max = maxChroma(lightness: L, hue: H)
   let C = max / 100 * S
   
   return LCH(L, C, H)
@@ -249,7 +249,7 @@ func huslToLch(husl: HUSL) -> LCH {
 func lchToHusl(lch: LCH) -> HUSL {
   let (L, C, H) = lch.tuple
   
-  let max = maxChroma(L, H)
+  let max = maxChroma(lightness: L, hue: H)
   let S = C / max * 100
   
   return HUSL(H, S, L)
@@ -259,7 +259,7 @@ func lchToHusl(lch: LCH) -> HUSL {
 func huslpToLch(husl: HUSL) -> LCH {
   let (H, S, L) = husl.tuple
   
-  let max = maxChroma(L)
+  let max = maxChroma(lightness: L)
   let C = max / 100 * S
   
   return LCH(L, C, H)
@@ -268,7 +268,7 @@ func huslpToLch(husl: HUSL) -> LCH {
 func lchToHuslp(lch: LCH) -> HUSL {
   let (L, C, H) = lch.tuple
   
-  let max = maxChroma(L)
+  let max = maxChroma(lightness: L)
   let S = C / max * 100
 
   return HUSL(H, S, L)

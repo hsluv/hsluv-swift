@@ -25,7 +25,7 @@
 import Foundation
 import CoreGraphics
 
-func huslToCGColor(H: Double, S: Double, L: Double, alpha: Double) -> CGColor? {
+func huslToCGColor(hue H: Double, saturation S: Double, lightness L: Double, alpha: Double) -> CGColor? {
   let (R, G, B) = huslToRgb(HUSL(H, S, L)).tuple
   let components = [CGFloat(R), CGFloat(G), CGFloat(B), CGFloat(alpha)]
   

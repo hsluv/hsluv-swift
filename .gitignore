@@ -20,4 +20,6 @@ DerivedData
 *.xcuserstate
 
 # Carthage
+Carthage.checkout
+Carthage.build
 Carthage/Build

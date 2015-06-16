@@ -43,7 +43,7 @@ struct HUSL: Deconstructable {
   }
   
   var tuple: Tuple {
-    return (H: H, S: S, L: L)
+    return (H, S, L)
   }
 }
 
@@ -59,7 +59,7 @@ struct XYZ: Deconstructable {
   }
   
   var tuple: Tuple {
-    return (X: X, Y: Y, Z: Z)
+    return (X, Y, Z)
   }
 }
 
@@ -75,7 +75,7 @@ struct RGB: Deconstructable {
   }
   
   var tuple: Tuple {
-    return (R: R, G: G, B: B)
+    return (R, G, B)
   }
 }
 
@@ -91,7 +91,7 @@ struct LCH: Deconstructable {
   }
   
   var tuple: Tuple {
-    return (L: L, C: C, H: H)
+    return (L, C, H)
   }
 }
 
@@ -107,6 +107,6 @@ struct LUV: Deconstructable {
   }
   
   var tuple: Tuple {
-    return (L: L, U: U, V: V)
+    return (L, U, V)
   }
 }
