@@ -24,6 +24,8 @@
 
 import Foundation
 
+// TODO: Add HUSLP struct
+
 public struct HUSL {
   public let hue: Double
   public let saturation: Double
@@ -45,25 +47,39 @@ public struct HUSL {
   }
   
   public init(red: Double, green: Double, blue: Double, alpha: Double = 1.0) {
-    let (hue, saturation, lightness) = rgbToHusl(RGBTuple(red, green, blue)).tuple
-    self.init(hue: hue, saturation: saturation, lightness: lightness, alpha: alpha)
+    let husl = rgbToHusl(RGBTuple(red, green, blue))
+    self.init(hue: husl.H, saturation: husl.S, lightness: husl.L, alpha: alpha)
+  }
+  
+  public init(hex: String, alpha: Double = 1.0) {
+    let hex = HUSLSwift.Hex(hex)
+    let husl = rgbToHusl(hexToRgb(hex))
+    self.init(hue: husl.H, saturation: husl.S, lightness: husl.L, alpha: alpha)
   }
 
   // MARK: - Conversion
   public var RGB: (R: Double, G: Double, B: Double) {
-    return huslToRgb(husl).tuple
+    let rgb = huslToRgb(husl)
+    return (rgb.R, rgb.G, rgb.B)
   }
   
   public var LCH: (L: Double, C: Double, H: Double) {
-    return huslToLch(husl).tuple
+    let lch = huslToLch(husl)
+    return (lch.L, lch.C, lch.H)
   }
   
   public var LUV: (L: Double, U: Double, V: Double) {
-    return lchToLuv(huslToLch(husl)).tuple
+    let luv = lchToLuv(huslToLch(husl))
+    return (luv.L, luv.U, luv.V)
   }
   
   public var XYZ: (X: Double, Y: Double, Z: Double) {
-    return  rgbToXyz(huslToRgb(husl)).tuple
+    let xyz = rgbToXyz(huslToRgb(husl))
+    return (xyz.X, xyz.Y, xyz.Z)
+  }
+  
+  public var Hex: String {
+    return rgbToHex(huslToRgb(husl)).string
   }
 }
 

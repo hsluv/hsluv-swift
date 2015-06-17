@@ -29,46 +29,21 @@ import Foundation
 
 typealias Tuple = (Double, Double, Double)
 
-protocol Deconstructable {
+protocol TupleConverter {
   var tuple: Tuple { get }
 }
 
-/// Hue(man), Saturation, Lightness (HUSL)
-struct HUSLTuple: Deconstructable {
-  var H: Double
-  var S: Double
-  var L: Double
+/// Hexadecimal color
+struct Hex {
+  let string: String
   
-  init(_ H: Double, _ S: Double, _ L: Double) {
-    self.H = H
-    self.S = S
-    self.L = L
-  }
-  
-  var tuple: Tuple {
-    return (H, S, L)
-  }
-}
-
-/// Luminance, Blue-stimulation, Cone-response [CIE 1931] (XYZ)
-struct XYZTuple: Deconstructable {
-  var X: Double
-  var Y: Double
-  var Z: Double
-  
-  init(_ X: Double, _ Y: Double, _ Z: Double) {
-    self.X = X
-    self.Y = Y
-    self.Z = Z
-  }
-  
-  var tuple: Tuple {
-    return (X, Y, Z)
+  init(_ string: String) {
+    self.string = string
   }
 }
 
 /// Red, Green, Blue (RGB)
-struct RGBTuple: Deconstructable {
+struct RGBTuple: TupleConverter {
   var R: Double
   var G: Double
   var B: Double
@@ -84,25 +59,25 @@ struct RGBTuple: Deconstructable {
   }
 }
 
-/// Lightness, Chroma, Hue (LCH)
-struct LCHTuple: Deconstructable {
-  var L: Double
-  var C: Double
-  var H: Double
+/// Luminance, Blue-stimulation, Cone-response [CIE 1931] (XYZ)
+struct XYZTuple: TupleConverter {
+  var X: Double
+  var Y: Double
+  var Z: Double
   
-  init(_ L: Double, _ C: Double, _ H: Double) {
-    self.L = L
-    self.C = C
-    self.H = H
+  init(_ X: Double, _ Y: Double, _ Z: Double) {
+    self.X = X
+    self.Y = Y
+    self.Z = Z
   }
   
   var tuple: Tuple {
-    return (L, C, H)
+    return (X, Y, Z)
   }
 }
 
 /// L*, u*, v* [CIE 1976] (LUV)
-struct LUVTuple: Deconstructable {
+struct LUVTuple {
   var L: Double
   var U: Double
   var V: Double
@@ -112,14 +87,31 @@ struct LUVTuple: Deconstructable {
     self.U = U
     self.V = V
   }
+}
+
+/// Lightness, Chroma, Hue (LCH)
+struct LCHTuple {
+  var L: Double
+  var C: Double
+  var H: Double
   
-  var tuple: Tuple {
-    return (L, U, V)
+  init(_ L: Double, _ C: Double, _ H: Double) {
+    self.L = L
+    self.C = C
+    self.H = H
   }
 }
 
-/// Hexadecimal color
-struct Hex {
-  let string: String
+/// Hue(man), Saturation, Lightness (HUSL)
+struct HUSLTuple {
+  var H: Double
+  var S: Double
+  var L: Double
+  
+  init(_ H: Double, _ S: Double, _ L: Double) {
+    self.H = H
+    self.S = S
+    self.L = L
+  }
 }
 

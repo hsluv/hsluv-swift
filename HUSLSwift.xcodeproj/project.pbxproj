@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB328E3B1B32050C0061A872 /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB328E391B3205050061A872 /* Snapshot.swift */; };
+		CB339EEC1B31EE2D0067FDAF /* snapshot-rev4.json in Resources */ = {isa = PBXBuildFile; fileRef = CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */; settings = {ASSET_TAGS = (); }; };
 		CB37B91C1B2E79A5009E63A5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80361B2D2CBF0010C653 /* Constant.swift */; };
 		CB37B91D1B2E79A8009E63A5 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80371B2D2CBF0010C653 /* Math.swift */; };
 		CB6AB2841B3083890075AF04 /* HUSLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */; };
@@ -24,12 +26,37 @@
 		CBCAD5321B2F6EEA00D0366A /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5301B2F6E8100D0366A /* CGColor.swift */; };
 		CBCAD5341B2F88AB00D0366A /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */; };
 		CBCAD5351B2F88AD00D0366A /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */; };
-		CBD1E3081B30B3B000E49F9B /* snapshot-rev3.json in Resources */ = {isa = PBXBuildFile; fileRef = CBD1E3071B30B2D300E49F9B /* snapshot-rev3.json */; };
 		CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80361B2D2CBF0010C653 /* Constant.swift */; };
 		CBDA80391B2D2CBF0010C653 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80371B2D2CBF0010C653 /* Math.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CB339EED1B31F9D20067FDAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBDA80131B2D2C740010C653 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBDA801B1B2D2C740010C653;
+			remoteInfo = HUSLMac;
+		};
+		CB339EEF1B31F9DA0067FDAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBDA80131B2D2C740010C653 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBDA801B1B2D2C740010C653;
+			remoteInfo = HUSLMac;
+		};
+		CB339EF11B31F9E10067FDAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBDA80131B2D2C740010C653 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB37B9041B2E7994009E63A5;
+			remoteInfo = HUSLiOS;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CB328E391B3205050061A872 /* Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snapshot.swift; path = Tests/Snapshot.swift; sourceTree = SOURCE_ROOT; };
+		CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "snapshot-rev4.json"; path = "Tests/Assets/snapshot-rev4.json"; sourceTree = SOURCE_ROOT; };
 		CB37B9051B2E7994009E63A5 /* HUSLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUSLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB604FB91B30734C009A99D1 /* HUSLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HUSLTests.swift; path = Tests/HUSLTests.swift; sourceTree = SOURCE_ROOT; };
 		CB6AB27F1B3083890075AF04 /* HUSLMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +129,7 @@
 				CBDA802A1B2D2C740010C653 /* AppKit */,
 				CB604FAA1B3071DC009A99D1 /* iOS */,
 				CB604FB91B30734C009A99D1 /* HUSLTests.swift */,
+				CB328E391B3205050061A872 /* Snapshot.swift */,
 			);
 			name = Tests;
 			path = "HUSLSwift iOSTests";
@@ -162,6 +190,7 @@
 		CBD1E3061B30B2C800E49F9B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */,
 				CBD1E3071B30B2D300E49F9B /* snapshot-rev3.json */,
 			);
 			name = Assets;
@@ -262,6 +291,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CB339EF01B31F9DA0067FDAF /* PBXTargetDependency */,
 			);
 			name = HUSLMacTests;
 			productName = HUSLMacTests;
@@ -279,6 +309,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CB339EF21B31F9E10067FDAF /* PBXTargetDependency */,
 			);
 			name = HUSLiOSTests;
 			productName = HUSLiOSTests;
@@ -296,6 +327,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CB339EEE1B31F9D20067FDAF /* PBXTargetDependency */,
 			);
 			name = HUSLTests;
 			productName = HUSLTests;
@@ -396,7 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD1E3081B30B3B000E49F9B /* snapshot-rev3.json in Resources */,
+				CB339EEC1B31EE2D0067FDAF /* snapshot-rev4.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB98BFBF1B307B1D0027506A /* HUSLTests.swift in Sources */,
+				CB328E3B1B32050C0061A872 /* Snapshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +495,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB339EEE1B31F9D20067FDAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBDA801B1B2D2C740010C653 /* HUSLMac */;
+			targetProxy = CB339EED1B31F9D20067FDAF /* PBXContainerItemProxy */;
+		};
+		CB339EF01B31F9DA0067FDAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBDA801B1B2D2C740010C653 /* HUSLMac */;
+			targetProxy = CB339EEF1B31F9DA0067FDAF /* PBXContainerItemProxy */;
+		};
+		CB339EF21B31F9E10067FDAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB37B9041B2E7994009E63A5 /* HUSLiOS */;
+			targetProxy = CB339EF11B31F9E10067FDAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CB37B9171B2E7995009E63A5 /* Debug */ = {
@@ -686,6 +737,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -706,6 +758,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";

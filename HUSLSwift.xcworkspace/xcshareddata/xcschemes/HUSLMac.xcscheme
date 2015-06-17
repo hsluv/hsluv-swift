@@ -4,7 +4,7 @@
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "NO">
+      buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -17,34 +17,6 @@
                BlueprintIdentifier = "CBDA801B1B2D2C740010C653"
                BuildableName = "HUSLSwift.framework"
                BlueprintName = "HUSLMac"
-               ReferencedContainer = "container:HUSLSwift.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB6AB27E1B3083890075AF04"
-               BuildableName = "HUSLMacTests.xctest"
-               BlueprintName = "HUSLMacTests"
-               ReferencedContainer = "container:HUSLSwift.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB98BFB31B307B070027506A"
-               BuildableName = "HUSLTests.xctest"
-               BlueprintName = "HUSLTests"
                ReferencedContainer = "container:HUSLSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
