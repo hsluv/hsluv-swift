@@ -2,7 +2,7 @@ License
 =======
 The MIT License (MIT)
 
-HUSL  
+Original HUSL implementation  
 Copyright (c) 2015 Alexei Boronine
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -27,7 +27,7 @@ SOFTWARE.
 
 The MIT License (MIT)
 
-Supporting code  
+Swift implementation and supporting code  
 Copyright (c) 2015 Clay Smith
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
