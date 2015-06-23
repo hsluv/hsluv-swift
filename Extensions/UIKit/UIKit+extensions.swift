@@ -28,13 +28,12 @@ public extension UIColor {
   /// Initializes and returns a color object using the specified opacity and
   /// HUSL color space component values.
   ///
-  /// - parameter hue: CGFLoat
-  /// - parameter saturation: CGFloat
-  /// - parameter lightness: CGFloat
-  /// - parameter alpha: CGFloat
-  convenience init?(hue: CGFloat, saturation: CGFloat, lightness: CGFloat, alpha: CGFloat) {
-    let husl = HUSL(hue: Double(hue), saturation: Double(saturation), lightness: Double(lightness), alpha: Double(alpha))
-    if let color = husl.CGColor {
+  /// - parameter hue: Double
+  /// - parameter saturation: Double
+  /// - parameter lightness: Double
+  /// - parameter alpha: Double
+  convenience init?(hue: Double, saturation: Double, lightness: Double, alpha: Double) {
+    if let color = huslToCGColor(hue: hue, saturation: saturation, lightness: lightness, alpha: alpha)  {
       self.init(CGColor: color)
     } else {
       return nil
@@ -44,24 +43,14 @@ public extension UIColor {
   /// Convenience function to wrap the behavior of getRed(red:green:blue:alpha:)
   ///
   /// - returns: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
-  func getRGB() -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+  func getRGB() -> (red: Double, green: Double, blue: Double, alpha: Double) {
     var red: CGFloat = 0.0
     var green: CGFloat = 0.0
     var blue: CGFloat = 0.0
     var alpha: CGFloat = 0.0
     
     self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-
-    return (red: red, green: green, blue: blue, alpha: alpha)
-  }
-}
-
-public extension HUSL {
-  public var UIColor: UIKit.UIColor? {
-    if let color = self.CGColor {
-      return UIKit.UIColor(CGColor: color)
-    }
     
-    return nil
+    return (red: Double(red), green: Double(green), blue: Double(blue), alpha: Double(alpha))
   }
 }

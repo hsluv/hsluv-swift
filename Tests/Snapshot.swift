@@ -12,9 +12,9 @@ import XCTest
 
 // TODO: Add HUSLP support
 
+typealias SnapshotType = [String: [String: [Double]]]
+
 class Snapshot {
-  typealias SnapshotType = [String: [String: [Double]]]
-  
   static var hexSamples: [String] = {
     let samples = "0123456789abcdef"
     
@@ -59,29 +59,6 @@ class Snapshot {
         "luv": [luv.L, luv.U, luv.V],
         "lch": [lch.L, lch.C, lch.H],
         "husl": [husl.H, husl.S, husl.L]
-      ]
-    }
-    
-    return current
-  }()
-  
-  static var currentAPI: SnapshotType = {
-    var current = SnapshotType()
-    
-    for sample in Snapshot.hexSamples {
-      let color = HUSL(hex: sample)
-      
-      let rgb = color.RGB
-      let xyz = color.XYZ
-      let luv = color.LUV
-      let lch = color.LCH
-      
-      current[sample] = [
-        "rgb": [rgb.R, rgb.G, rgb.B],
-        "xyz": [xyz.X, xyz.Y, xyz.Z],
-        "luv": [luv.L, luv.U, luv.V],
-        "lch": [lch.L, lch.C, lch.H],
-        "husl": [color.hue, color.saturation, color.lightness]
       ]
     }
     

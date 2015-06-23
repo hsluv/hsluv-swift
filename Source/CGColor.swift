@@ -32,8 +32,6 @@ func huslToCGColor(hue H: Double, saturation S: Double, lightness L: Double, alp
   return CGColorCreate(CGColorSpaceCreateDeviceRGB(), components)
 }
 
-extension HUSL {
-  public var CGColor: CGColorRef? {
-    return huslToCGColor(hue: hue, saturation: saturation, lightness: lightness, alpha: alpha)
-  }
+func huslToCGColor(husl: HUSLTuple, alpha: Double = 1.0) -> CGColor? {
+  return huslToCGColor(hue: husl.H, saturation: husl.S, lightness: husl.L, alpha: alpha)
 }

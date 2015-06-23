@@ -27,42 +27,25 @@ import XCTest
 import HUSLSwift
 
 class AppKitTests: XCTestCase {
-
-  let tolerance = 0.00000001
+  let rgbRangeTolerance = 0.00000000001
   
-  override func setUp() {
-    super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-  }
-  
-  override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    super.tearDown()
-  }
-  
-  func testNSColorExtension() {
-    let color = NSColor(hue: 0, saturation: 100, lightness: 50, alpha: 1.0)
-    
-    XCTAssertNotNil(color)
-    
-    let rgb = color!.getRGB()
-    
-    XCTAssertEqualWithAccuracy(rgb.red, 0.9175225466, accuracy: 0.01)
-    XCTAssertEqualWithAccuracy(rgb.green, 0, accuracy: 0.01)
-    XCTAssertEqualWithAccuracy(rgb.blue, 0.3938514752, accuracy: 0.01)
-    XCTAssertEqual(rgb.alpha, 1)
-  }
-
-  
-  func testNSColorFromHUSLExtension() {
-    let husl = HUSL(0.0, 100.0, 50.0, 1.0)
-    let color = husl.NSColor
-    
-    let rgb = color!.getRGB()
-    
-    XCTAssertEqualWithAccuracy(rgb.red, 0.9175225466, accuracy: 0.01)
-    XCTAssertEqualWithAccuracy(rgb.green, 0, accuracy: 0.01)
-    XCTAssertEqualWithAccuracy(rgb.blue, 0.3938514752, accuracy: 0.01)
-    XCTAssertEqual(rgb.alpha, 1)
+  func testNSColorRGBRangeTolerance() {
+    for h in stride(from: 0.0, through: 360, by: 5) {
+      for s in stride(from: 0.0, through: 100, by: 5) {
+        for l in stride(from: 0.0, through: 100, by: 5) {
+          let color = NSColor(hue: h, saturation: s, lightness: l, alpha: 1.0)
+          
+          XCTAssertNotNil(color)
+          
+          let tRgb = color!.getRGB()
+          let rgb = [tRgb.red, tRgb.green, tRgb.blue]
+          
+          for channel in rgb {
+            XCTAssertGreaterThan(channel, -rgbRangeTolerance, "HUSL: \([h, s, l]) -> RGB: \(rgb)")
+            XCTAssertLessThanOrEqual(channel, 1 + rgbRangeTolerance, "HUSL: \([h, s, l]) -> RGB: \(rgb)")
+          }
+        }
+      }
+    }
   }
 }

@@ -12,19 +12,10 @@ import XCTest
 
 // TODO: Add HUSLP tests
 
-func ==(tuple1: Tuple, tuple2: Tuple) -> Bool {
-  return (tuple1.0 == tuple2.0) && (tuple1.1 == tuple2.1) && (tuple1.2 == tuple2.2)
-}
-
 class HUSLTests: XCTestCase {
-  
   let rgbRangeTolerance = 0.00000000001
   let snapshotTolerance = 0.00000000001
-  
-  private func arrayify(tuple: Tuple) -> [Double] {
-    return [tuple.0, tuple.1, tuple.2]
-  }
-  
+
   override func setUp() {
     super.setUp()
     // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -70,7 +61,7 @@ class HUSLTests: XCTestCase {
     for h in stride(from: 0.0, through: 360, by: 5) {
       for s in stride(from: 0.0, through: 100, by: 5) {
         for l in stride(from: 0.0, through: 100, by: 5) {
-          let tRgb = HUSL(h, s, l, 1.0).RGB
+          let tRgb = huslToRgb(HUSLTuple(h, s, l))
           let rgb = [tRgb.R, tRgb.G, tRgb.B]
           
           for channel in rgb {
@@ -82,19 +73,11 @@ class HUSLTests: XCTestCase {
     }
   }
   
-  func testHUSLSnapshot() {
+  func testSnapshot() {
     Snapshot.compare(Snapshot.current) { [snapshotTolerance] hex, tag, stableTuple, currentTuple, stableChannel, currentChannel in
       let diff = abs(currentChannel - stableChannel)
       
       XCTAssertLessThan(diff, snapshotTolerance, "Snapshots for \(hex) don't match at \(tag): (stable: \(stableTuple), current: \(currentTuple)")
     }
   }
-
-  func testAPISnapshot() {
-    Snapshot.compare(Snapshot.currentAPI) { [snapshotTolerance] hex, tag, stableTuple, currentTuple, stableChannel, currentChannel in
-      let diff = abs(currentChannel - stableChannel)
-      
-      XCTAssertLessThan(diff, snapshotTolerance, "Snapshots for \(hex) don't match at \(tag): (stable: \(stableTuple), current: \(currentTuple)")
-    }
-  }  
 }
