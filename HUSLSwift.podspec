@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.summary          = "Swift port of HUSL, a human-friendly alternative to HSL"
   s.homepage         = "https://github.com/husl-colors/husl-swift"
   s.license          = { :type => 'MIT', :text => '@see LICENSE' }
-  s.author           = { "Alexei Boronine" => "alexei@boronine.com", "Clay Smith" => "s.clay.smith@gmail.com" }
-  s.source           = { :git => "https://github.com/husl-colors/husl-swift.git", :tag => s.version.to_s }
+  s.author           = { "Clay Smith" => "s.clay.smith@gmail.com", "Alexei Boronine" => "alexei@boronine.com" }
+  s.source           = { :git => "https://github.com/husl-colors/husl-swift.git", :tag => "v" + s.version.to_s }
   s.default_subspecs = 'HUSL'
   s.requires_arc     = true
   s.xcconfig         = { 'SWIFT_INSTALL_OBJC_HEADER' => 'NO' }
