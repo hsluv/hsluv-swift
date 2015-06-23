@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:HUSLiOS.playground">
+   </FileRef>
+   <FileRef
       location = "group:HUSLSwift.xcodeproj">
    </FileRef>
 </Workspace>
