@@ -70,7 +70,7 @@ class HUSLTests: XCTestCase {
     for h in stride(from: 0.0, through: 360, by: 5) {
       for s in stride(from: 0.0, through: 100, by: 5) {
         for l in stride(from: 0.0, through: 100, by: 5) {
-          let tRgb = huslToRgb(HUSLTuple(h, s, l))
+          let tRgb = HUSL(h, s, l, 1.0).RGB
           let rgb = [tRgb.R, tRgb.G, tRgb.B]
           
           for channel in rgb {
@@ -83,35 +83,18 @@ class HUSLTests: XCTestCase {
   }
   
   func testHUSLSnapshot() {
-    let (stable, current) = (Snapshot.stable, Snapshot.current)
-
-    hexes: for (hex, stableSamples) in stable {
-      guard let currentSamples = current[hex] else {
-        fatalError("Current sample is missing at \(hex)")
-      }
+    Snapshot.compare(Snapshot.current) { [snapshotTolerance] hex, tag, stableTuple, currentTuple, stableChannel, currentChannel in
+      let diff = abs(currentChannel - stableChannel)
       
-      tags: for (tag, stableTuple) in stableSamples {
-        if tag == "huslp" {
-          continue tags
-        }
-        
-        guard let currentTuple = currentSamples[tag] else {
-          fatalError("Current tuple is missing at \(hex):\(tag)")
-        }
-        
-        channels: for i in [0...2] {
-          guard let stableChannel = stableTuple[i].first, currentChannel = currentTuple[i].first else {
-            fatalError("Current channel is missing at \(hex):\(tag):\(i)")
-          }
-          
-          let diff = abs(currentChannel - stableChannel)
-          
-          XCTAssertLessThan(diff, snapshotTolerance, "Snapshots for \(hex) don't match at \(tag): (stable: \(stableTuple), current: \(currentTuple)")
-        }
-        
-      }
+      XCTAssertLessThan(diff, snapshotTolerance, "Snapshots for \(hex) don't match at \(tag): (stable: \(stableTuple), current: \(currentTuple)")
     }
   }
 
-  
+  func testAPISnapshot() {
+    Snapshot.compare(Snapshot.currentAPI) { [snapshotTolerance] hex, tag, stableTuple, currentTuple, stableChannel, currentChannel in
+      let diff = abs(currentChannel - stableChannel)
+      
+      XCTAssertLessThan(diff, snapshotTolerance, "Snapshots for \(hex) don't match at \(tag): (stable: \(stableTuple), current: \(currentTuple)")
+    }
+  }  
 }
