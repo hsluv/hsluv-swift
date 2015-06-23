@@ -34,6 +34,6 @@ func huslToCGColor(hue H: Double, saturation S: Double, lightness L: Double, alp
 
 extension HUSL {
   public var CGColor: CGColorRef? {
-    return huslToCGColor(hue: hue, saturation: saturation, lightness: lightness, alpha: 1.0)
+    return huslToCGColor(hue: hue, saturation: saturation, lightness: lightness, alpha: alpha)
   }
 }
