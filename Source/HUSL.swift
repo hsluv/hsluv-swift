@@ -27,16 +27,14 @@ import Foundation
 // TODO: Add HUSLP struct
 
 public struct HUSL {
-  public let hue: Double
-  public let saturation: Double
-  public let lightness: Double
-  public let alpha: Double
   private let husl: HUSLTuple
+  public let alpha: Double
+
+  public var hue: Double { return husl.H }
+  public var saturation: Double { return husl.S }
+  public var lightness: Double { return husl.L }
   
   public init(hue: Double, saturation: Double, lightness: Double, alpha: Double = 1.0) {
-    self.hue = hue
-    self.saturation = saturation
-    self.lightness = lightness
     self.alpha = alpha
     
     self.husl = HUSLTuple(hue, saturation, lightness)
@@ -57,7 +55,7 @@ public struct HUSL {
     self.init(hue: husl.H, saturation: husl.S, lightness: husl.L, alpha: alpha)
   }
 
-  // MARK: - Conversion
+  // MARK: - Conversion  
   public var RGB: (R: Double, G: Double, B: Double) {
     let rgb = huslToRgb(husl)
     return (rgb.R, rgb.G, rgb.B)
