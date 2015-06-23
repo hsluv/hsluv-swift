@@ -26,6 +26,22 @@ import Foundation
 import XCTest
 import HUSLSwift
 
+extension NSColor {
+  /// Convenience function to wrap the behavior of getRed(red:green:blue:alpha:)
+  ///
+  /// - returns: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
+  func getRGB() -> (red: Double, green: Double, blue: Double, alpha: Double) {
+    var red: CGFloat = 0.0
+    var green: CGFloat = 0.0
+    var blue: CGFloat = 0.0
+    var alpha: CGFloat = 0.0
+    
+    self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+    
+    return (red: Double(red), green: Double(green), blue: Double(blue), alpha: Double(alpha))
+  }
+}
+
 class AppKitTests: XCTestCase {
   let rgbRangeTolerance = 0.00000000001
   
