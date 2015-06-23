@@ -24,8 +24,8 @@
 		CB98BFBF1B307B1D0027506A /* HUSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB604FB91B30734C009A99D1 /* HUSLTests.swift */; };
 		CBCAD5311B2F6E8100D0366A /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5301B2F6E8100D0366A /* CGColor.swift */; };
 		CBCAD5321B2F6EEA00D0366A /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5301B2F6E8100D0366A /* CGColor.swift */; };
-		CBCAD5341B2F88AB00D0366A /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */; };
-		CBCAD5351B2F88AD00D0366A /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */; };
+		CBCAD5341B2F88AB00D0366A /* ColorEncodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */; };
+		CBCAD5351B2F88AD00D0366A /* ColorEncodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */; };
 		CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80361B2D2CBF0010C653 /* Constant.swift */; };
 		CBDA80391B2D2CBF0010C653 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80371B2D2CBF0010C653 /* Math.swift */; };
 /* End PBXBuildFile section */
@@ -70,7 +70,7 @@
 		CB783AD11B3078D5001F8BCB /* AppKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppKit.swift; path = Tests/MacExtensions/AppKit.swift; sourceTree = SOURCE_ROOT; };
 		CB98BFB41B307B070027506A /* HUSLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCAD5301B2F6E8100D0366A /* CGColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGColor.swift; path = Source/CGColor.swift; sourceTree = SOURCE_ROOT; };
-		CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSpaces.swift; path = Source/ColorSpaces.swift; sourceTree = SOURCE_ROOT; };
+		CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorEncodings.swift; path = Source/ColorEncodings.swift; sourceTree = SOURCE_ROOT; };
 		CBCAD5371B2FBEBD00D0366A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CBCAD5381B2FBEBD00D0366A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = "/Users/claysmith/Projects/husl-swift/LICENSE"; sourceTree = "<absolute>"; };
 		CBCAD53B1B2FBF0600D0366A /* HUSLSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HUSLSwift.podspec; sourceTree = "<group>"; };
@@ -223,7 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				CBDA80361B2D2CBF0010C653 /* Constant.swift */,
-				CBCAD5331B2F88AB00D0366A /* ColorSpaces.swift */,
+				CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */,
 				CBDA80371B2D2CBF0010C653 /* Math.swift */,
 				CB6AB28C1B30847A0075AF04 /* HUSL.swift */,
 				CBCAD5301B2F6E8100D0366A /* CGColor.swift */,
@@ -447,7 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB37B91C1B2E79A5009E63A5 /* Constant.swift in Sources */,
-				CBCAD5351B2F88AD00D0366A /* ColorSpaces.swift in Sources */,
+				CBCAD5351B2F88AD00D0366A /* ColorEncodings.swift in Sources */,
 				CB37B91D1B2E79A8009E63A5 /* Math.swift in Sources */,
 				CBCAD5321B2F6EEA00D0366A /* CGColor.swift in Sources */,
 				CB6AB28E1B30847C0075AF04 /* HUSL.swift in Sources */,
@@ -485,7 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */,
-				CBCAD5341B2F88AB00D0366A /* ColorSpaces.swift in Sources */,
+				CBCAD5341B2F88AB00D0366A /* ColorEncodings.swift in Sources */,
 				CBDA80391B2D2CBF0010C653 /* Math.swift in Sources */,
 				CBCAD5311B2F6E8100D0366A /* CGColor.swift in Sources */,
 				CB6AB28D1B30847A0075AF04 /* HUSL.swift in Sources */,
