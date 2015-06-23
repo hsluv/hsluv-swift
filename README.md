@@ -1,5 +1,9 @@
 # HUSLSwift
 
+[![Cocoapod compatible](https://img.shields.io/cocoapods/v/HUSLSwift.svg)](https://cocoapods.org/pods/HUSLSwift)
+[![Carthage compatible](https://img.shields.io/badge/carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![MIT License](https://img.shields.io/badge/license-MIT%20License-blue.svg)](LICENSE)
+
 Swift port of [HUSL](http://www.husl-colors.org) (revision 4), courtesy 
 of [Clay Smith](https://github.com/stphnclysmth)
 
@@ -21,15 +25,28 @@ let color = UIColor(hue: 360.0, saturation: 100.0, lightness: l00.0, alpha: 1.0)
 
 ## INSTALL
 
-The supported method of installation is via Cocoapods. Simply add `pod 'HUSLSwift'` to your target. Since this is a Swift dynamic framework, you must also tell Cocoapods to `use_frameworks!` instead of static libraries.
+This project is compatible with Cocoapods and Carthage. (These instructions assume that your chosen method is already installed.)
+
+### Cocoapods
+
+Add `pod 'HUSLSwift'` to your target. Since this is a Swift dynamic framework, you must also tell Cocoapods to `use_frameworks!` instead of static libraries.
 
 ```ruby
 platform :ios, '9.0' # or, :osx, '10.10'
 use_frameworks!
 
 target 'YourProject' do
-  pod 'HUSLSwift', '~> 1.0.0'
+pod 'HUSLSwift', '~> 1.0.0'
 end
+```
+
+### Carthage
+
+Add `github "husl-colors/husl-swift" ~> 1.0.0` to your Cartfile and run `carthage bootstrap`. This builds frameworks for Mac and iOS targets. 
+
+```sh
+> echo 'github "husl-colors/husl-swift" ~> 1.0.0' >> Cartfile
+> carthage bootstrap
 ```
 
 
