@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "HUSLSwift"
 
-  s.version          = "5.0.3"
+  s.version          = "1.0.0"
 
   s.summary          = "Swift port of HUSL, a human-friendly alternative to HSL"
   s.homepage         = "https://github.com/husl-colors/husl-swift"
