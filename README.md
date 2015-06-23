@@ -25,10 +25,10 @@ The supported method of installation is via Cocoapods. Simply add `pod 'HUSLSwif
 
 ```ruby
 platform :ios, '9.0' # or, :osx, '10.10'
-use_frameworks!usl
+use_frameworks!
 
 target 'YourProject' do
-pod 'HUSLSwift', '~> 1.0.0'
+  pod 'HUSLSwift', '~> 1.0.0'
 end
 ```
 
