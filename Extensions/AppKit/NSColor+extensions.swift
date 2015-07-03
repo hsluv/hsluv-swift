@@ -32,11 +32,8 @@ public extension NSColor {
   /// - parameter saturation: Double
   /// - parameter lightness: Double
   /// - parameter alpha: Double
-  convenience init?(hue: Double, saturation: Double, lightness: Double, alpha: Double) {
-    if let color = huslToCGColor(hue: hue, saturation: saturation, lightness: lightness, alpha: alpha)  {
-      self.init(CGColor: color)
-    } else {
-      return nil
-    }
+  convenience init(hue: Double, saturation: Double, lightness: Double, alpha: Double) {
+    let rgb = huslToRgb(HUSLTuple(hue, saturation, lightness))
+    self.init(red: CGFloat(rgb.R), green: CGFloat(rgb.G), blue: CGFloat(rgb.B), alpha: CGFloat(alpha))
   }
 }

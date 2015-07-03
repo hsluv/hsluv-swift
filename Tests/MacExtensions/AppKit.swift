@@ -53,7 +53,7 @@ class AppKitTests: XCTestCase {
           
           XCTAssertNotNil(color)
           
-          let tRgb = color!.getRGB()
+          let tRgb = color.getRGB()
           let rgb = [tRgb.red, tRgb.green, tRgb.blue]
           
           for channel in rgb {

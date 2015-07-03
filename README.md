@@ -32,20 +32,20 @@ This project is compatible with Cocoapods and Carthage. (These instructions assu
 Add `pod 'HUSLSwift'` to your target. Since this is a Swift dynamic framework, you must also tell Cocoapods to `use_frameworks!` instead of static libraries.
 
 ```ruby
-platform :ios, '9.0' # or, :osx, '10.10'
+platform :ios, '8.0' # or, :osx, '10.10'
 use_frameworks!
 
 target 'YourProject' do
-pod 'HUSLSwift', '~> 1.0.0'
+pod 'HUSLSwift', '~> 1.1.0'
 end
 ```
 
 ### Carthage
 
-Add `github "husl-colors/husl-swift" ~> 1.0.1` to your Cartfile and run `carthage bootstrap`. This builds frameworks for Mac and iOS targets. 
+Add `github "husl-colors/husl-swift" ~> 1.1.0` to your Cartfile and run `carthage bootstrap`. This builds frameworks for Mac and iOS targets. 
 
 ```sh
-> echo 'github "husl-colors/husl-swift" ~> 1.0.1' >> Cartfile
+> echo 'github "husl-colors/husl-swift" ~> 1.1.0' >> Cartfile
 > carthage bootstrap
 ```
 

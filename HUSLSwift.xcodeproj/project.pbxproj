@@ -21,8 +21,6 @@
 		CB6AB2B31B308FA70075AF04 /* UIKit+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783ACE1B307768001F8BCB /* UIKit+extensions.swift */; };
 		CB98BFB91B307B070027506A /* HUSLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */; };
 		CB98BFBF1B307B1D0027506A /* HUSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB604FB91B30734C009A99D1 /* HUSLTests.swift */; };
-		CBCAD5311B2F6E8100D0366A /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5301B2F6E8100D0366A /* CGColor.swift */; };
-		CBCAD5321B2F6EEA00D0366A /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5301B2F6E8100D0366A /* CGColor.swift */; };
 		CBCAD5341B2F88AB00D0366A /* ColorEncodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */; };
 		CBCAD5351B2F88AD00D0366A /* ColorEncodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */; };
 		CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80361B2D2CBF0010C653 /* Constant.swift */; };
@@ -66,7 +64,6 @@
 		CB783AD01B3078CF001F8BCB /* UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIKit.swift; path = Tests/iOSExtensions/UIKit.swift; sourceTree = SOURCE_ROOT; };
 		CB783AD11B3078D5001F8BCB /* AppKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppKit.swift; path = Tests/MacExtensions/AppKit.swift; sourceTree = SOURCE_ROOT; };
 		CB98BFB41B307B070027506A /* HUSLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBCAD5301B2F6E8100D0366A /* CGColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGColor.swift; path = Source/CGColor.swift; sourceTree = SOURCE_ROOT; };
 		CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorEncodings.swift; path = Source/ColorEncodings.swift; sourceTree = SOURCE_ROOT; };
 		CBCAD5371B2FBEBD00D0366A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CBCAD53B1B2FBF0600D0366A /* HUSLSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HUSLSwift.podspec; sourceTree = "<group>"; };
@@ -221,7 +218,6 @@
 				CBDA80361B2D2CBF0010C653 /* Constant.swift */,
 				CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */,
 				CBDA80371B2D2CBF0010C653 /* Math.swift */,
-				CBCAD5301B2F6E8100D0366A /* CGColor.swift */,
 				CB8B96C41B2D59C7000F303C /* Supporting Files */,
 			);
 			name = Source;
@@ -444,7 +440,6 @@
 				CB37B91C1B2E79A5009E63A5 /* Constant.swift in Sources */,
 				CBCAD5351B2F88AD00D0366A /* ColorEncodings.swift in Sources */,
 				CB37B91D1B2E79A8009E63A5 /* Math.swift in Sources */,
-				CBCAD5321B2F6EEA00D0366A /* CGColor.swift in Sources */,
 				CB6AB2B31B308FA70075AF04 /* UIKit+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,7 +478,6 @@
 				CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */,
 				CBCAD5341B2F88AB00D0366A /* ColorEncodings.swift in Sources */,
 				CBDA80391B2D2CBF0010C653 /* Math.swift in Sources */,
-				CBCAD5311B2F6E8100D0366A /* CGColor.swift in Sources */,
 				CB6AB2B01B308EDC0075AF04 /* NSColor+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
