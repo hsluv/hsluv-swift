@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "HUSLSwift"
 
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
 
   s.summary          = "Swift port of HUSL, a human-friendly alternative to HSL"
   s.homepage         = "https://github.com/husl-colors/husl-swift"
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
   s.xcconfig         = { 'SWIFT_INSTALL_OBJC_HEADER' => 'NO' }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.11'
 
   s.subspec 'HUSL' do |ss|

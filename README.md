@@ -42,10 +42,10 @@ end
 
 ### Carthage
 
-Add `github "husl-colors/husl-swift" ~> 1.0.0` to your Cartfile and run `carthage bootstrap`. This builds frameworks for Mac and iOS targets. 
+Add `github "husl-colors/husl-swift" ~> 1.0.1` to your Cartfile and run `carthage bootstrap`. This builds frameworks for Mac and iOS targets. 
 
 ```sh
-> echo 'github "husl-colors/husl-swift" ~> 1.0.0' >> Cartfile
+> echo 'github "husl-colors/husl-swift" ~> 1.0.1' >> Cartfile
 > carthage bootstrap
 ```
 

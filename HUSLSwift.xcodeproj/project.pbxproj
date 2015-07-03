@@ -69,12 +69,12 @@
 		CBCAD5301B2F6E8100D0366A /* CGColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGColor.swift; path = Source/CGColor.swift; sourceTree = SOURCE_ROOT; };
 		CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorEncodings.swift; path = Source/ColorEncodings.swift; sourceTree = SOURCE_ROOT; };
 		CBCAD5371B2FBEBD00D0366A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CBCAD5381B2FBEBD00D0366A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = "/Users/claysmith/Projects/husl-swift/LICENSE"; sourceTree = "<absolute>"; };
 		CBCAD53B1B2FBF0600D0366A /* HUSLSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HUSLSwift.podspec; sourceTree = "<group>"; };
 		CBD1E3071B30B2D300E49F9B /* snapshot-rev3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "snapshot-rev3.json"; path = "Tests/Assets/snapshot-rev3.json"; sourceTree = SOURCE_ROOT; };
 		CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUSLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDA80361B2D2CBF0010C653 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Source/Constant.swift; sourceTree = SOURCE_ROOT; };
 		CBDA80371B2D2CBF0010C653 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Math.swift; path = Source/Math.swift; sourceTree = SOURCE_ROOT; };
+		CBDD2B131B461C3000E4548F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +178,7 @@
 			children = (
 				CBCAD53B1B2FBF0600D0366A /* HUSLSwift.podspec */,
 				CBCAD5371B2FBEBD00D0366A /* README.md */,
-				CBCAD5381B2FBEBD00D0366A /* LICENSE */,
+				CBDD2B131B461C3000E4548F /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
