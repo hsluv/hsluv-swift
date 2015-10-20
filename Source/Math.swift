@@ -39,9 +39,9 @@ func getBounds(lightness L: Double) -> [Vector] {
   
   var result = [Vector]()
   
-  let channels = reflect(Constant.m)
-  for i in 0..<channels.count {
-    let (m1, m2, m3) = channels[i].1.value as! Tuple
+  let mirror = Mirror(reflecting: Constant.m)
+  for (_, value) in mirror.children {
+    let (m1, m2, m3) = value as! Tuple
    
     for t in [0.0, 1.0] {
       let top1 = (284517 * m1 - 94839 * m3) * sub2
