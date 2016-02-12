@@ -356,7 +356,6 @@
 				TargetAttributes = {
 					CB37B9041B2E7994009E63A5 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = NB3CQMEWD8;
 					};
 					CB6AB27E1B3083890075AF04 = {
 						CreatedOnToolsVersion = 7.0;
@@ -722,7 +721,6 @@
 		CBDA80311B2D2C740010C653 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -743,7 +741,6 @@
 		CBDA80321B2D2C740010C653 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
