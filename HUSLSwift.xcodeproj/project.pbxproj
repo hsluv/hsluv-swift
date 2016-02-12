@@ -10,7 +10,7 @@
 		CB24CBB51B394AD800091467 /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB328E391B3205050061A872 /* Snapshot.swift */; };
 		CB24CBB61B394ADB00091467 /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB328E391B3205050061A872 /* Snapshot.swift */; };
 		CB328E3B1B32050C0061A872 /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB328E391B3205050061A872 /* Snapshot.swift */; };
-		CB339EEC1B31EE2D0067FDAF /* snapshot-rev4.json in Resources */ = {isa = PBXBuildFile; fileRef = CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */; settings = {ASSET_TAGS = (); }; };
+		CB339EEC1B31EE2D0067FDAF /* snapshot-rev4.json in Resources */ = {isa = PBXBuildFile; fileRef = CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */; };
 		CB37B91C1B2E79A5009E63A5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80361B2D2CBF0010C653 /* Constant.swift */; };
 		CB37B91D1B2E79A8009E63A5 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80371B2D2CBF0010C653 /* Math.swift */; };
 		CB6AB2841B3083890075AF04 /* HUSLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */; };
@@ -356,7 +356,7 @@
 				TargetAttributes = {
 					CB37B9041B2E7994009E63A5 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 9HWYXRWL2V;
+						DevelopmentTeam = NB3CQMEWD8;
 					};
 					CB6AB27E1B3083890075AF04 = {
 						CreatedOnToolsVersion = 7.0;
@@ -369,7 +369,7 @@
 					};
 					CBDA801B1B2D2C740010C653 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 9HWYXRWL2V;
+						DevelopmentTeam = NB3CQMEWD8;
 					};
 				};
 			};

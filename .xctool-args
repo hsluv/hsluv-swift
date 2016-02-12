@@ -1,7 +1,4 @@
 [
   "-workspace", "HUSLSwift.xcworkspace",
-  "-scheme", "HUSLMac",
   "-configuration", "Debug",
-  "-sdk", "macosx",
-  "-arch", "x86_64"
 ]
