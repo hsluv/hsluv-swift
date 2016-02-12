@@ -25,11 +25,11 @@ let color = UIColor(hue: 360.0, saturation: 100.0, lightness: l00.0, alpha: 1.0)
 
 ## INSTALL
 
-This project is compatible with Cocoapods and Carthage. (These instructions assume that your chosen method is already installed.)
+This project is compatible with CocoaPods and Carthage. (These instructions assume that your chosen method is already installed.)
 
-### Cocoapods
+### CocoaPods
 
-Add `pod 'HUSLSwift'` to your target. Since this is a Swift dynamic framework, you must also tell Cocoapods to `use_frameworks!` instead of static libraries.
+Add `pod 'HUSLSwift'` to your target. Since this is a Swift dynamic framework, you must also tell CocoaPods to `use_frameworks!` instead of static libraries.
 
 ```ruby
 platform :ios, '8.0' # or, :osx, '10.10'
