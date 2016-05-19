@@ -322,8 +322,8 @@ func round(value: Double, places: Double) -> Double {
   return round(value * divisor) / divisor
 }
 
-func getHexString(var channel ch: Double) -> String {
-  ch = round(ch, places: 6)
+func getHexString(channel channel: Double) -> String {
+  var ch = round(channel, places: 6)
   
   if ch < 0 || ch > 1 {
     // TODO: Implement Swift thrown errors
