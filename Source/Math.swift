@@ -55,7 +55,7 @@ func getBounds(lightness L: Double) -> [Vector] {
   return result
 }
 
-func intersectLine(_ line1: Vector, line line2: Vector) -> Double {
+func intersectLine(_ line1: Vector, _ line2: Vector) -> Double {
   return (line1.1 - line2.1) / (line2.0 - line1.0)
 }
 
@@ -63,7 +63,7 @@ func distanceFromPole(_ point: Vector) -> Double {
   return sqrt(pow(point.0, 2) + pow(point.1, 2))
 }
 
-func lengthOfRayUntilIntersect(_ theta: Double, line: Vector) -> Double? {
+func lengthOfRayUntilIntersect(theta: Double, line: Vector) -> Double? {
   // theta  -- angle of ray starting at (0, 0)
   // m, b   -- slope and intercept of line
   // x1, y1 -- coordinates of intersection
@@ -101,7 +101,7 @@ func maxChroma(lightness L: Double) -> Double {
   
   for (m1, b1) in getBounds(lightness: L) {
     // x where line intersects with perpendicular running though (0, 0)
-    let x = intersectLine((m1, b1), line: (-1 / m1, 0))
+    let x = intersectLine((m1, b1), (-1 / m1, 0))
     lengths.append(distanceFromPole((x, b1 + x * m1)))
   }
   
@@ -115,7 +115,7 @@ func maxChroma(lightness L: Double, hue H: Double) -> Double {
   
   var lengths = [Double]()
   for line in getBounds(lightness: L) {
-    if let l = lengthOfRayUntilIntersect(hrad, line: line) {
+    if let l = lengthOfRayUntilIntersect(theta: hrad, line: line) {
       lengths.append(l)
     }
   }
