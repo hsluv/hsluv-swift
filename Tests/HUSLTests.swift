@@ -58,9 +58,9 @@ class HUSLTests: XCTestCase {
   }
   
   func testRgbRangeTolerance() {
-    for h in 0.0.stride(through: 360, by: 5) {
-      for s in 0.0.stride(through: 100, by: 5) {
-        for l in 0.0.stride(through: 100, by: 5) {
+    for h in stride(from: 0.0, through: 360, by: 5) {
+      for s in stride(from: 0.0, through: 100, by: 5) {
+        for l in stride(from: 0.0, through: 100, by: 5) {
           let tRgb = huslToRgb(HUSLTuple(h, s, l))
           let rgb = [tRgb.R, tRgb.G, tRgb.B]
           

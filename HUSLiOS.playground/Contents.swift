@@ -24,7 +24,7 @@ for H in stride(from: 0, through: 360, by: 5.0) {
 }
 
 if #available(iOS 9.0, *) {
-  var palette = PaletteView(frame: CGRectMake(0, 0, 500, 100), numberOfColors: 37)
+    var palette = PaletteView(frame: CGRect(x: 0, y: 0, width: 500, height: 100), numberOfColors: 37)
   
   palette.addColors(colors)
 }
