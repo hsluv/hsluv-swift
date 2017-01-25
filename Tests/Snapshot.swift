@@ -19,9 +19,9 @@ class Snapshot {
     let samples = "0123456789abcdef"
     
     var hexSamples = [String]()
-    for (_, r) in samples.characters.enumerate() {
-      for (_, g) in samples.characters.enumerate() {
-        for (_, b) in samples.characters.enumerate() {
+    for (_, r) in samples.characters.enumerated() {
+      for (_, g) in samples.characters.enumerated() {
+        for (_, b) in samples.characters.enumerated() {
           hexSamples.append("#\(r)\(r)\(g)\(g)\(b)\(b)")
         }
       }
@@ -31,12 +31,12 @@ class Snapshot {
     }()
   
   static var stable: SnapshotType = {
-    guard let url = NSBundle(forClass: Snapshot.self).URLForResource("snapshot-rev4", withExtension: "json") else {
+    guard let url = Bundle(for: Snapshot.self).url(forResource: "snapshot-rev4", withExtension: "json") else {
       fatalError("Snapshot JSON file is missing")
     }
     
-    let jsonData = try! NSData(contentsOfURL: url, options: NSDataReadingOptions.DataReadingMappedIfSafe)
-    let jsonResult = try! NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers) as! SnapshotType
+    let jsonData = try! Data(contentsOf: url, options: Data.ReadingOptions.mappedIfSafe)
+    let jsonResult = try! JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions.mutableContainers) as! SnapshotType
     
     return jsonResult
   }()
@@ -65,7 +65,7 @@ class Snapshot {
     return current
   }()
   
-  static func compare(snapshot: SnapshotType, block: (hex: String, tag: String, stableTuple: [Double], currentTuple: [Double], stableChannel: Double, currentChannel: Double) -> ()) {
+  static func compare(_ snapshot: SnapshotType, block: (_ hex: String, _ tag: String, _ stableTuple: [Double], _ currentTuple: [Double], _ stableChannel: Double, _ currentChannel: Double) -> ()) {
     
     hexes: for (hex, stableSamples) in stable {
       guard let currentSamples = current[hex] else {
@@ -82,11 +82,11 @@ class Snapshot {
         }
         
         channels: for i in [0...2] {
-          guard let stableChannel = stableTuple[i].first, currentChannel = currentTuple[i].first else {
+          guard let stableChannel = stableTuple[i].first, let currentChannel = currentTuple[i].first else {
             fatalError("Current channel is missing at \(hex):\(tag):\(i)")
           }
           
-          block(hex: hex, tag: tag, stableTuple: stableTuple, currentTuple: currentTuple, stableChannel: stableChannel, currentChannel: currentChannel)
+          block(hex, tag, stableTuple, currentTuple, stableChannel, currentChannel)
         }
         
       }

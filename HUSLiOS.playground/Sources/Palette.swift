@@ -1,6 +1,6 @@
 import UIKit
 
-public let squareRect = CGRectMake(0, 0, 75, 75)
+public let squareRect = CGRect(x: 0, y: 0, width:75, height:75)
 
 @available(iOS 9.0, *)
 public class PaletteView: UIStackView {
@@ -14,17 +14,17 @@ public class PaletteView: UIStackView {
     super.init(frame: frame)
     
     if frame.width > frame.height {
-      axis = .Horizontal
-      subviewRect = CGRectMake(0, 0, frame.width / CGFloat(colors), frame.height)
+      axis = .horizontal
+        subviewRect = CGRect(x: 0, y: 0, width: frame.width / CGFloat(colors), height: frame.height)
     } else {
-      axis = .Vertical
-      subviewRect = CGRectMake(0, 0, frame.width, frame.height / CGFloat(colors))
+      axis = .vertical
+        subviewRect = CGRect(x: 0, y: 0, width: frame.width, height: frame.height / CGFloat(colors))
     }
     
-    distribution = .FillEqually
+    distribution = .fillEqually
   }
   
-  public func addColor(color: UIColor?) {
+  public func addColor(_ color: UIColor?) {
     guard let color = color else {
       print("Color is missing for view")
       return
@@ -36,7 +36,7 @@ public class PaletteView: UIStackView {
     self.addArrangedSubview(view)    
   }
   
-  public func addColors(colors: [UIColor?]) {
+  public func addColors(_ colors: [UIColor?]) {
     for color in colors {
       addColor(color)
     }

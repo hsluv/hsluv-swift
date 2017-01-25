@@ -55,11 +55,11 @@ func getBounds(lightness L: Double) -> [Vector] {
   return result
 }
 
-func intersectLine(line1: Vector, line line2: Vector) -> Double {
+func intersectLine(_ line1: Vector, _ line2: Vector) -> Double {
   return (line1.1 - line2.1) / (line2.0 - line1.0)
 }
 
-func distanceFromPole(point: Vector) -> Double {
+func distanceFromPole(_ point: Vector) -> Double {
   return sqrt(pow(point.0, 2) + pow(point.1, 2))
 }
 
@@ -101,7 +101,7 @@ func maxChroma(lightness L: Double) -> Double {
   
   for (m1, b1) in getBounds(lightness: L) {
     // x where line intersects with perpendicular running though (0, 0)
-    let x = intersectLine((m1, b1), line: (-1 / m1, 0))
+    let x = intersectLine((m1, b1), (-1 / m1, 0))
     lengths.append(distanceFromPole((x, b1 + x * m1)))
   }
   
@@ -115,7 +115,7 @@ func maxChroma(lightness L: Double, hue H: Double) -> Double {
   
   var lengths = [Double]()
   for line in getBounds(lightness: L) {
-    if let l = lengthOfRayUntilIntersect(hrad, line: line) {
+    if let l = lengthOfRayUntilIntersect(theta: hrad, line: line) {
       lengths.append(l)
     }
   }
@@ -123,7 +123,7 @@ func maxChroma(lightness L: Double, hue H: Double) -> Double {
   return lengths.reduce(Constant.maxDouble) { min($0, $1) }
 }
 
-func dotProduct<T: TupleConverter>(a: Tuple, b: T) -> Double {
+func dotProduct<T: TupleConverter>(_ a: Tuple, b: T) -> Double {
   let b = b.tuple
 
   var ret = 0.0
@@ -136,7 +136,7 @@ func dotProduct<T: TupleConverter>(a: Tuple, b: T) -> Double {
 }
 
 // Used for RGB conversions
-func fromLinear(c: Double) -> Double {
+func fromLinear(_ c: Double) -> Double {
   if c <= 0.0031308 {
     return 12.92 * c
   }
@@ -144,7 +144,7 @@ func fromLinear(c: Double) -> Double {
   return 1.055 * pow(c, 1 / 2.4) - 0.055
 }
 
-func toLinear(c: Double) -> Double {
+func toLinear(_ c: Double) -> Double {
   let a = 0.055
   if c > 0.04045 {
     return pow((c + a) / (1 + a), 2.4)
@@ -160,7 +160,7 @@ func toLinear(c: Double) -> Double {
 // illuminant D65, so Yn (see refY in Maxima file) equals 1. The formula is
 // simplified accordingly.
 
-func yToL(Y: Double) -> Double {
+func yToL(_ Y: Double) -> Double {
   if Y <= Constant.epsilon {
     return Y * Constant.kappa
   }
@@ -168,7 +168,7 @@ func yToL(Y: Double) -> Double {
   return 116 * pow(Y, 1/3) - 16
 }
 
-func lToY(L: Double) -> Double {
+func lToY(_ L: Double) -> Double {
   if L <= 8 {
     return L / Constant.kappa
   }
@@ -179,7 +179,7 @@ func lToY(L: Double) -> Double {
 
 // MARK: - XYZ/RGB Conversion
 
-func xyzToRgb(xyz: XYZTuple) -> RGBTuple {
+func xyzToRgb(_ xyz: XYZTuple) -> RGBTuple {
   let R = fromLinear(dotProduct(Constant.m.R, b: xyz))
   let G = fromLinear(dotProduct(Constant.m.G, b: xyz))
   let B = fromLinear(dotProduct(Constant.m.B, b: xyz))
@@ -187,7 +187,7 @@ func xyzToRgb(xyz: XYZTuple) -> RGBTuple {
   return RGBTuple(R, G, B)
 }
 
-func rgbToXyz(rgb: RGBTuple) -> XYZTuple {
+func rgbToXyz(_ rgb: RGBTuple) -> XYZTuple {
   let rgbl = RGBTuple(toLinear(rgb.R), toLinear(rgb.G), toLinear(rgb.B))
   
   let X = dotProduct(Constant.mInv.X, b: rgbl)
@@ -200,7 +200,7 @@ func rgbToXyz(rgb: RGBTuple) -> XYZTuple {
 
 // MARK: - XYZ/LUV Conversion
 
-func xyzToLuv(xyz: XYZTuple) -> LUVTuple {
+func xyzToLuv(_ xyz: XYZTuple) -> LUVTuple {
   let varU = (4 * xyz.X) / (xyz.X + (15 * xyz.Y) + (3 * xyz.Z))
   let varV = (9 * xyz.Y) / (xyz.X + (15 * xyz.Y) + (3 * xyz.Z))
   
@@ -217,7 +217,7 @@ func xyzToLuv(xyz: XYZTuple) -> LUVTuple {
   return LUVTuple(L, U, V)
 }
 
-func luvToXyz(luv: LUVTuple) -> XYZTuple {
+func luvToXyz(_ luv: LUVTuple) -> XYZTuple {
   guard luv.L != 0 else {
     // Black will create a divide-by-zero error
     return XYZTuple(0, 0, 0)
@@ -236,7 +236,7 @@ func luvToXyz(luv: LUVTuple) -> XYZTuple {
 
 // MARK: - LUV/LCH Conversion
 
-func luvToLch(luv: LUVTuple) -> LCHTuple {
+func luvToLch(_ luv: LUVTuple) -> LCHTuple {
   let C = sqrt(pow(luv.U, 2) + pow(luv.V, 2))
   
   guard C >= 0.00000001 else {
@@ -254,7 +254,7 @@ func luvToLch(luv: LUVTuple) -> LCHTuple {
   return LCHTuple(luv.L, C, H)
 }
 
-func lchToLuv(lch: LCHTuple) -> LUVTuple {
+func lchToLuv(_ lch: LCHTuple) -> LUVTuple {
   let Hrad = lch.H / 360 * 2 * M_PI
   let U = cos(Hrad) * lch.C
   let V = sin(Hrad) * lch.C
@@ -265,7 +265,7 @@ func lchToLuv(lch: LCHTuple) -> LUVTuple {
 
 // MARK: - HUSL/LCH Conversion
 
-func huslToLch(husl: HUSLTuple) -> LCHTuple {
+func huslToLch(_ husl: HUSLTuple) -> LCHTuple {
   guard husl.L <= 99.9999999 && husl.L >= 0.00000001 else {
     // White and black: disambiguate chroma
     return LCHTuple(husl.L, 0, husl.H)
@@ -277,7 +277,7 @@ func huslToLch(husl: HUSLTuple) -> LCHTuple {
   return LCHTuple(husl.L, C, husl.H)
 }
 
-func lchToHusl(lch: LCHTuple) -> HUSLTuple {
+func lchToHusl(_ lch: LCHTuple) -> HUSLTuple {
   guard lch.L <= 99.9999999 && lch.L >= 0.00000001 else {
     // White and black: disambiguate saturation
     return HUSLTuple(lch.H, 0, lch.L)
@@ -292,7 +292,7 @@ func lchToHusl(lch: LCHTuple) -> HUSLTuple {
 
 // MARK: - Pastel HUSL/LCH Conversion
 
-func huslpToLch(husl: HUSLTuple) -> LCHTuple {
+func huslpToLch(_ husl: HUSLTuple) -> LCHTuple {
   guard husl.L <= 99.9999999 && husl.L >= 0.00000001 else {
     // White and black: disambiguate chroma
     return LCHTuple(husl.L, 0, husl.H)
@@ -304,7 +304,7 @@ func huslpToLch(husl: HUSLTuple) -> LCHTuple {
   return LCHTuple(husl.L, C, husl.H)
 }
 
-func lchToHuslp(lch: LCHTuple) -> HUSLTuple {
+func lchToHuslp(_ lch: LCHTuple) -> HUSLTuple {
   guard lch.L <= 99.9999999 && lch.L >= 0.00000001 else {
     // White and black: disambiguate saturation
     return HUSLTuple(lch.H, 0, lch.L)
@@ -317,12 +317,12 @@ func lchToHuslp(lch: LCHTuple) -> HUSLTuple {
 }
 
 // MARK: - RGB/Hex Conversion
-func round(value: Double, places: Double) -> Double {
+func round(_ value: Double, places: Double) -> Double {
   let divisor = pow(10.0, places)
   return round(value * divisor) / divisor
 }
 
-func getHexString(channel channel: Double) -> String {
+func getHexString(_ channel: Double) -> String {
   var ch = round(channel, places: 6)
   
   if ch < 0 || ch > 1 {
@@ -332,24 +332,24 @@ func getHexString(channel channel: Double) -> String {
   
   ch = round(ch * 255.0)
   
-  return String(Int(ch), radix: 16, uppercase: false).stringByPaddingToLength(2, withString: "0", startingAtIndex: 0)
+  return String(Int(ch), radix: 16, uppercase: false).padding(toLength: 2, withPad: "0", startingAt: 0)
 }
 
-func rgbToHex(rgb: RGBTuple) -> Hex {
-  let R = getHexString(channel: rgb.R)
-  let G = getHexString(channel: rgb.G)
-  let B = getHexString(channel: rgb.B)
+func rgbToHex(_ rgb: RGBTuple) -> Hex {
+  let R = getHexString(rgb.R)
+  let G = getHexString(rgb.G)
+  let B = getHexString(rgb.B)
   
   return Hex("#\(R)\(G)\(B)")
 }
 
 // This function is based on a comment by mehawk on gist arshad/de147c42d7b3063ef7bc.
 // It is so flippin' elegant.
-func hexToRgb(hex: Hex) -> RGBTuple {
-  let string = hex.string.stringByReplacingOccurrencesOfString("#", withString: "")
+func hexToRgb(_ hex: Hex) -> RGBTuple {
+  let string = hex.string.replacingOccurrences(of: "#", with: "")
 
   var rgbValue:UInt32 = 0
-  NSScanner(string: string).scanHexInt(&rgbValue)
+  Scanner(string: string).scanHexInt32(&rgbValue)
   
   return RGBTuple(
     Double((rgbValue & 0xFF0000) >> 16) / 255.0,
@@ -360,11 +360,11 @@ func hexToRgb(hex: Hex) -> RGBTuple {
 
 // MARK: - Conversion shortcuts
 
-func huslToRgb(hsl: HUSLTuple) -> RGBTuple {
+func huslToRgb(_ hsl: HUSLTuple) -> RGBTuple {
   return xyzToRgb(luvToXyz(lchToLuv(huslToLch(hsl))))
 }
 
-func rgbToHusl(rgb: RGBTuple) -> HUSLTuple {
+func rgbToHusl(_ rgb: RGBTuple) -> HUSLTuple {
   return lchToHusl(luvToLch(xyzToLuv(rgbToXyz(rgb))))
 }
 

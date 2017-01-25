@@ -46,9 +46,9 @@ class AppKitTests: XCTestCase {
   let rgbRangeTolerance = 0.00000000001
   
   func testNSColorRGBRangeTolerance() {
-    for h in 0.0.stride(through: 360, by: 5) {
-      for s in 0.0.stride(through: 100, by: 5) {
-        for l in 0.0.stride(through: 100, by: 5) {
+    for h in stride(from: 0.0, through: 360, by: 5) {
+      for s in stride(from: 0.0, through: 100, by: 5) {
+        for l in stride(from: 0.0, through: 100, by: 5) {
           let color = NSColor(hue: h, saturation: s, lightness: l, alpha: 1.0)
           
           XCTAssertNotNil(color)
