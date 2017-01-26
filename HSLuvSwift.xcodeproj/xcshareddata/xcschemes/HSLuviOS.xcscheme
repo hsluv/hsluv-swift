@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CB37B9041B2E7994009E63A5"
-               BuildableName = "HUSLSwift.framework"
-               BlueprintName = "HUSLiOS"
-               ReferencedContainer = "container:HUSLSwift.xcodeproj">
+               BuildableName = "HSLuvSwift.framework"
+               BlueprintName = "HSLuviOS"
+               ReferencedContainer = "container:HSLuvSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CB6AB2A01B308A6F0075AF04"
-               BuildableName = "HUSLiOSTests.xctest"
-               BlueprintName = "HUSLiOSTests"
-               ReferencedContainer = "container:HUSLSwift.xcodeproj">
+               BuildableName = "HSLuviOSTests.xctest"
+               BlueprintName = "HSLuviOSTests"
+               ReferencedContainer = "container:HSLuvSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB37B9041B2E7994009E63A5"
-            BuildableName = "HUSLSwift.framework"
-            BlueprintName = "HUSLiOS"
-            ReferencedContainer = "container:HUSLSwift.xcodeproj">
+            BuildableName = "HSLuvSwift.framework"
+            BlueprintName = "HSLuviOS"
+            ReferencedContainer = "container:HSLuvSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB37B9041B2E7994009E63A5"
-            BuildableName = "HUSLSwift.framework"
-            BlueprintName = "HUSLiOS"
-            ReferencedContainer = "container:HUSLSwift.xcodeproj">
+            BuildableName = "HSLuvSwift.framework"
+            BlueprintName = "HSLuviOS"
+            ReferencedContainer = "container:HSLuvSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB37B9041B2E7994009E63A5"
-            BuildableName = "HUSLSwift.framework"
-            BlueprintName = "HUSLiOS"
-            ReferencedContainer = "container:HUSLSwift.xcodeproj">
+            BuildableName = "HSLuvSwift.framework"
+            BlueprintName = "HSLuviOS"
+            ReferencedContainer = "container:HSLuvSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

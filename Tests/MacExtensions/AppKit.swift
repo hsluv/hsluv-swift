@@ -24,7 +24,7 @@
 
 import Foundation
 import XCTest
-import HUSLSwift
+import HSLuvSwift
 
 extension NSColor {
   /// Convenience function to wrap the behavior of getRed(red:green:blue:alpha:)
@@ -57,8 +57,8 @@ class AppKitTests: XCTestCase {
           let rgb = [tRgb.red, tRgb.green, tRgb.blue]
           
           for channel in rgb {
-            XCTAssertGreaterThan(channel, -rgbRangeTolerance, "HUSL: \([h, s, l]) -> RGB: \(rgb)")
-            XCTAssertLessThanOrEqual(channel, 1 + rgbRangeTolerance, "HUSL: \([h, s, l]) -> RGB: \(rgb)")
+            XCTAssertGreaterThan(channel, -rgbRangeTolerance, "HSLuv: \([h, s, l]) -> RGB: \(rgb)")
+            XCTAssertLessThanOrEqual(channel, 1 + rgbRangeTolerance, "HSLuv: \([h, s, l]) -> RGB: \(rgb)")
           }
         }
       }

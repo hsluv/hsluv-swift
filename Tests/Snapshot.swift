@@ -1,6 +1,6 @@
 //
 //  Snapshot.swift
-//  HUSLSwift
+//  HSLuvSwift
 //
 //  Created by Clay Smith on 6/17/15.
 //  Copyright © 2015 Clay Smith. All rights reserved.
@@ -8,9 +8,9 @@
 
 import Foundation
 import XCTest
-@testable import HUSLSwift
+@testable import HSLuvSwift
 
-// TODO: Add HUSLP support
+// TODO: Add HPLuv support
 
 typealias SnapshotType = [String: [String: [Double]]]
 
@@ -51,14 +51,14 @@ class Snapshot {
       let xyz = rgbToXyz(rgb)
       let luv = xyzToLuv(xyz)
       let lch = luvToLch(luv)
-      let husl = lchToHusl(lch)
+      let hsluv = lchToHsluv(lch)
       
       current[sample] = [
         "rgb": [rgb.R, rgb.G, rgb.B],
         "xyz": [xyz.X, xyz.Y, xyz.Z],
         "luv": [luv.L, luv.U, luv.V],
         "lch": [lch.L, lch.C, lch.H],
-        "husl": [husl.H, husl.S, husl.L]
+        "hsluv": [hsluv.H, hsluv.S, hsluv.L]
       ]
     }
     
@@ -73,7 +73,7 @@ class Snapshot {
       }
       
       tags: for (tag, stableTuple) in stableSamples {
-        if tag == "huslp" {
+        if tag == "hpluv" {
           continue tags
         }
         

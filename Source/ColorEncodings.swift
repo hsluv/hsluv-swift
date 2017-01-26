@@ -102,8 +102,8 @@ struct LCHTuple {
   }
 }
 
-/// Hue(man), Saturation, Lightness (HUSL)
-struct HUSLTuple {
+/// Hue(man), Saturation, Lightness (HSLuv)
+struct HSLuvTuple {
   var H: Double
   var S: Double
   var L: Double

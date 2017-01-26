@@ -1,6 +1,6 @@
 //
 //  Common.swift
-//  HUSLSwift
+//  HSLuvSwift
 //
 //  Created by Clay Smith on 6/16/15.
 //  Copyright © 2015 Clay Smith. All rights reserved.
@@ -8,13 +8,13 @@
 
 import Foundation
 import XCTest
-@testable import HUSLSwift
+@testable import HSLuvSwift
 
-// TODO: Add HUSLP tests
+// TODO: Add HPLuv tests
 
-class HUSLTests: XCTestCase {
-  let rgbRangeTolerance = 0.00000000001
-  let snapshotTolerance = 0.00000000001
+class HSLuvTests: XCTestCase {
+  let rgbRangeTolerance = 0.000000001
+  let snapshotTolerance = 0.000000001
 
   override func setUp() {
     super.setUp()
@@ -29,9 +29,9 @@ class HUSLTests: XCTestCase {
       let fromXyz  = rgbToXyz(fromRgb)
       let fromLuv  = xyzToLuv(fromXyz)
       let fromLch  = luvToLch(fromLuv)
-      let fromHusl = lchToHusl(fromLch)
+      let fromHsluv = lchToHsluv(fromLch)
       
-      let toLch = huslToLch(fromHusl)
+      let toLch = hsluvToLch(fromHsluv)
       let toLuv = lchToLuv(toLch)
       let toXyz = luvToXyz(toLuv)
       let toRgb = xyzToRgb(toXyz)
@@ -61,12 +61,12 @@ class HUSLTests: XCTestCase {
     for h in stride(from: 0.0, through: 360, by: 5) {
       for s in stride(from: 0.0, through: 100, by: 5) {
         for l in stride(from: 0.0, through: 100, by: 5) {
-          let tRgb = huslToRgb(HUSLTuple(h, s, l))
+          let tRgb = hsluvToRgb(HSLuvTuple(h, s, l))
           let rgb = [tRgb.R, tRgb.G, tRgb.B]
           
           for channel in rgb {
-            XCTAssertGreaterThan(channel, -rgbRangeTolerance, "HUSL: \([h, s, l]) -> RGB: \(rgb)")
-            XCTAssertLessThanOrEqual(channel, 1 + rgbRangeTolerance, "HUSL: \([h, s, l]) -> RGB: \(rgb)")
+            XCTAssertGreaterThan(channel, -rgbRangeTolerance, "HSLuv: \([h, s, l]) -> RGB: \(rgb)")
+            XCTAssertLessThanOrEqual(channel, 1 + rgbRangeTolerance, "HSLuv: \([h, s, l]) -> RGB: \(rgb)")
           }
         }
       }
