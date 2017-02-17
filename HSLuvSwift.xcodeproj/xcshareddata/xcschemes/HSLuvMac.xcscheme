@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CBDA801B1B2D2C740010C653"
-               BuildableName = "HUSLSwift.framework"
-               BlueprintName = "HUSLMac"
-               ReferencedContainer = "container:HUSLSwift.xcodeproj">
+               BuildableName = "HSLuvSwift.framework"
+               BlueprintName = "HSLuvMac"
+               ReferencedContainer = "container:HSLuvSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CB98BFB31B307B070027506A"
-               BuildableName = "HUSLTests.xctest"
-               BlueprintName = "HUSLTests"
-               ReferencedContainer = "container:HUSLSwift.xcodeproj">
+               BuildableName = "HSLuvTests.xctest"
+               BlueprintName = "HSLuvTests"
+               ReferencedContainer = "container:HSLuvSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CB6AB27E1B3083890075AF04"
-               BuildableName = "HUSLMacTests.xctest"
-               BlueprintName = "HUSLMacTests"
-               ReferencedContainer = "container:HUSLSwift.xcodeproj">
+               BuildableName = "HSLuvMacTests.xctest"
+               BlueprintName = "HSLuvMacTests"
+               ReferencedContainer = "container:HSLuvSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CBDA801B1B2D2C740010C653"
-            BuildableName = "HUSLSwift.framework"
-            BlueprintName = "HUSLMac"
-            ReferencedContainer = "container:HUSLSwift.xcodeproj">
+            BuildableName = "HSLuvSwift.framework"
+            BlueprintName = "HSLuvMac"
+            ReferencedContainer = "container:HSLuvSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CBDA801B1B2D2C740010C653"
-            BuildableName = "HUSLSwift.framework"
-            BlueprintName = "HUSLMac"
-            ReferencedContainer = "container:HUSLSwift.xcodeproj">
+            BuildableName = "HSLuvSwift.framework"
+            BlueprintName = "HSLuvMac"
+            ReferencedContainer = "container:HSLuvSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -93,9 +93,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CBDA801B1B2D2C740010C653"
-            BuildableName = "HUSLSwift.framework"
-            BlueprintName = "HUSLMac"
-            ReferencedContainer = "container:HUSLSwift.xcodeproj">
+            BuildableName = "HSLuvSwift.framework"
+            BlueprintName = "HSLuvMac"
+            ReferencedContainer = "container:HSLuvSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

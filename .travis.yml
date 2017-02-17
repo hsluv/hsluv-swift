@@ -5,8 +5,8 @@ env:
     - IOS_SDK=iphonesimulator10.2
     - OSX_SDK=macosx10.12
   matrix:
-    - SCHEME=HUSLMac TEST_SDK=$OSX_SDK DESTINATION="arch=x86_64"
-    - SCHEME=HUSLiOS TEST_SDK=$IOS_SDK DESTINATION="OS=10.2,platform=iOS Simulator,id=DB794781-65A7-4884-8D00-AAC3CBD39A44"
+    - SCHEME=HSLuvMac TEST_SDK=$OSX_SDK DESTINATION="arch=x86_64"
+    - SCHEME=HSLuviOS TEST_SDK=$IOS_SDK DESTINATION="OS=10.2,platform=iOS Simulator,id=DB794781-65A7-4884-8D00-AAC3CBD39A44"
 script:
   - set -o pipefail
   - xcodebuild -version

@@ -13,14 +13,14 @@
 		CB339EEC1B31EE2D0067FDAF /* snapshot-rev4.json in Resources */ = {isa = PBXBuildFile; fileRef = CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */; };
 		CB37B91C1B2E79A5009E63A5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80361B2D2CBF0010C653 /* Constant.swift */; };
 		CB37B91D1B2E79A8009E63A5 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80371B2D2CBF0010C653 /* Math.swift */; };
-		CB6AB2841B3083890075AF04 /* HUSLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */; };
+		CB6AB2841B3083890075AF04 /* HSLuvSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDA801C1B2D2C740010C653 /* HSLuvSwift.framework */; };
 		CB6AB28B1B3084020075AF04 /* AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783AD11B3078D5001F8BCB /* AppKit.swift */; };
-		CB6AB2A61B308A6F0075AF04 /* HUSLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB37B9051B2E7994009E63A5 /* HUSLSwift.framework */; };
+		CB6AB2A61B308A6F0075AF04 /* HSLuvSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB37B9051B2E7994009E63A5 /* HSLuvSwift.framework */; };
 		CB6AB2AD1B308B520075AF04 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783AD01B3078CF001F8BCB /* UIKit.swift */; };
 		CB6AB2B01B308EDC0075AF04 /* NSColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783ACD1B30775F001F8BCB /* NSColor+extensions.swift */; };
 		CB6AB2B31B308FA70075AF04 /* UIKit+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB783ACE1B307768001F8BCB /* UIKit+extensions.swift */; };
-		CB98BFB91B307B070027506A /* HUSLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */; };
-		CB98BFBF1B307B1D0027506A /* HUSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB604FB91B30734C009A99D1 /* HUSLTests.swift */; };
+		CB98BFB91B307B070027506A /* HSLuvSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDA801C1B2D2C740010C653 /* HSLuvSwift.framework */; };
+		CB98BFBF1B307B1D0027506A /* HSLuvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB604FB91B30734C009A99D1 /* HSLuvTests.swift */; };
 		CBCAD5341B2F88AB00D0366A /* ColorEncodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */; };
 		CBCAD5351B2F88AD00D0366A /* ColorEncodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */; };
 		CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80361B2D2CBF0010C653 /* Constant.swift */; };
@@ -33,42 +33,41 @@
 			containerPortal = CBDA80131B2D2C740010C653 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CBDA801B1B2D2C740010C653;
-			remoteInfo = HUSLMac;
+			remoteInfo = HSLuvMac;
 		};
 		CB339EEF1B31F9DA0067FDAF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CBDA80131B2D2C740010C653 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CBDA801B1B2D2C740010C653;
-			remoteInfo = HUSLMac;
+			remoteInfo = HSLuvMac;
 		};
 		CB339EF11B31F9E10067FDAF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CBDA80131B2D2C740010C653 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CB37B9041B2E7994009E63A5;
-			remoteInfo = HUSLiOS;
+			remoteInfo = HSLuviOS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CB328E391B3205050061A872 /* Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snapshot.swift; path = Tests/Snapshot.swift; sourceTree = SOURCE_ROOT; };
 		CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "snapshot-rev4.json"; path = "Tests/Assets/snapshot-rev4.json"; sourceTree = SOURCE_ROOT; };
-		CB37B9051B2E7994009E63A5 /* HUSLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUSLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB604FB91B30734C009A99D1 /* HUSLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HUSLTests.swift; path = Tests/HUSLTests.swift; sourceTree = SOURCE_ROOT; };
-		CB6AB27F1B3083890075AF04 /* HUSLMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB6AB2A11B308A6F0075AF04 /* HUSLiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB37B9051B2E7994009E63A5 /* HSLuvSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSLuvSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB604FB91B30734C009A99D1 /* HSLuvTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSLuvTests.swift; path = Tests/HSLuvTests.swift; sourceTree = SOURCE_ROOT; };
+		CB6AB27F1B3083890075AF04 /* HSLuvMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSLuvMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6AB2A11B308A6F0075AF04 /* HSLuviOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSLuviOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB783ACD1B30775F001F8BCB /* NSColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NSColor+extensions.swift"; path = "Extensions/AppKit/NSColor+extensions.swift"; sourceTree = "<group>"; };
 		CB783ACE1B307768001F8BCB /* UIKit+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIKit+extensions.swift"; path = "Extensions/UIKit/UIKit+extensions.swift"; sourceTree = "<group>"; };
 		CB783ACF1B30777E001F8BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
 		CB783AD01B3078CF001F8BCB /* UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIKit.swift; path = Tests/iOSExtensions/UIKit.swift; sourceTree = SOURCE_ROOT; };
 		CB783AD11B3078D5001F8BCB /* AppKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppKit.swift; path = Tests/MacExtensions/AppKit.swift; sourceTree = SOURCE_ROOT; };
-		CB98BFB41B307B070027506A /* HUSLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUSLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB98BFB41B307B070027506A /* HSLuvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSLuvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorEncodings.swift; path = Source/ColorEncodings.swift; sourceTree = SOURCE_ROOT; };
 		CBCAD5371B2FBEBD00D0366A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CBCAD53B1B2FBF0600D0366A /* HUSLSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HUSLSwift.podspec; sourceTree = "<group>"; };
-		CBD1E3071B30B2D300E49F9B /* snapshot-rev3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "snapshot-rev3.json"; path = "Tests/Assets/snapshot-rev3.json"; sourceTree = SOURCE_ROOT; };
-		CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUSLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCAD53B1B2FBF0600D0366A /* HSLuvSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HSLuvSwift.podspec; sourceTree = "<group>"; };
+		CBDA801C1B2D2C740010C653 /* HSLuvSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSLuvSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDA80361B2D2CBF0010C653 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Source/Constant.swift; sourceTree = SOURCE_ROOT; };
 		CBDA80371B2D2CBF0010C653 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Math.swift; path = Source/Math.swift; sourceTree = SOURCE_ROOT; };
 		CBDD2B131B461C3000E4548F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -86,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB6AB2841B3083890075AF04 /* HUSLSwift.framework in Frameworks */,
+				CB6AB2841B3083890075AF04 /* HSLuvSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB6AB2A61B308A6F0075AF04 /* HUSLSwift.framework in Frameworks */,
+				CB6AB2A61B308A6F0075AF04 /* HSLuvSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB98BFB91B307B070027506A /* HUSLSwift.framework in Frameworks */,
+				CB98BFB91B307B070027506A /* HSLuvSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,11 +121,11 @@
 				CBD1E3061B30B2C800E49F9B /* Assets */,
 				CBDA802A1B2D2C740010C653 /* AppKit */,
 				CB604FAA1B3071DC009A99D1 /* iOS */,
-				CB604FB91B30734C009A99D1 /* HUSLTests.swift */,
+				CB604FB91B30734C009A99D1 /* HSLuvTests.swift */,
 				CB328E391B3205050061A872 /* Snapshot.swift */,
 			);
 			name = Tests;
-			path = "HUSLSwift iOSTests";
+			path = "HSLuvSwift iOSTests";
 			sourceTree = "<group>";
 		};
 		CB604FAA1B3071DC009A99D1 /* iOS */ = {
@@ -173,7 +172,7 @@
 		CBCAD5361B2FBEAF00D0366A /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				CBCAD53B1B2FBF0600D0366A /* HUSLSwift.podspec */,
+				CBCAD53B1B2FBF0600D0366A /* HSLuvSwift.podspec */,
 				CBCAD5371B2FBEBD00D0366A /* README.md */,
 				CBDD2B131B461C3000E4548F /* LICENSE */,
 			);
@@ -184,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */,
-				CBD1E3071B30B2D300E49F9B /* snapshot-rev3.json */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -203,11 +201,11 @@
 		CBDA801D1B2D2C740010C653 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */,
-				CB37B9051B2E7994009E63A5 /* HUSLSwift.framework */,
-				CB98BFB41B307B070027506A /* HUSLTests.xctest */,
-				CB6AB27F1B3083890075AF04 /* HUSLMacTests.xctest */,
-				CB6AB2A11B308A6F0075AF04 /* HUSLiOSTests.xctest */,
+				CBDA801C1B2D2C740010C653 /* HSLuvSwift.framework */,
+				CB37B9051B2E7994009E63A5 /* HSLuvSwift.framework */,
+				CB98BFB41B307B070027506A /* HSLuvTests.xctest */,
+				CB6AB27F1B3083890075AF04 /* HSLuvMacTests.xctest */,
+				CB6AB2A11B308A6F0075AF04 /* HSLuviOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,7 +219,7 @@
 				CB8B96C41B2D59C7000F303C /* Supporting Files */,
 			);
 			name = Source;
-			path = HUSLSwift;
+			path = HSLuvSwift;
 			sourceTree = "<group>";
 		};
 		CBDA802A1B2D2C740010C653 /* AppKit */ = {
@@ -230,7 +228,7 @@
 				CB783AD11B3078D5001F8BCB /* AppKit.swift */,
 			);
 			name = AppKit;
-			path = ../HUSLSwiftTests;
+			path = ../HSLuvSwiftTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +251,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CB37B9041B2E7994009E63A5 /* HUSLiOS */ = {
+		CB37B9041B2E7994009E63A5 /* HSLuviOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB37B9161B2E7995009E63A5 /* Build configuration list for PBXNativeTarget "HUSLiOS" */;
+			buildConfigurationList = CB37B9161B2E7995009E63A5 /* Build configuration list for PBXNativeTarget "HSLuviOS" */;
 			buildPhases = (
 				CB37B9001B2E7994009E63A5 /* Sources */,
 				CB37B9011B2E7994009E63A5 /* Frameworks */,
@@ -266,14 +264,14 @@
 			);
 			dependencies = (
 			);
-			name = HUSLiOS;
-			productName = "HUSLSwift iOS";
-			productReference = CB37B9051B2E7994009E63A5 /* HUSLSwift.framework */;
+			name = HSLuviOS;
+			productName = "HSLuvSwift iOS";
+			productReference = CB37B9051B2E7994009E63A5 /* HSLuvSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CB6AB27E1B3083890075AF04 /* HUSLMacTests */ = {
+		CB6AB27E1B3083890075AF04 /* HSLuvMacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB6AB2891B3083890075AF04 /* Build configuration list for PBXNativeTarget "HUSLMacTests" */;
+			buildConfigurationList = CB6AB2891B3083890075AF04 /* Build configuration list for PBXNativeTarget "HSLuvMacTests" */;
 			buildPhases = (
 				CB6AB27B1B3083890075AF04 /* Sources */,
 				CB6AB27C1B3083890075AF04 /* Frameworks */,
@@ -284,14 +282,14 @@
 			dependencies = (
 				CB339EF01B31F9DA0067FDAF /* PBXTargetDependency */,
 			);
-			name = HUSLMacTests;
-			productName = HUSLMacTests;
-			productReference = CB6AB27F1B3083890075AF04 /* HUSLMacTests.xctest */;
+			name = HSLuvMacTests;
+			productName = HSLuvMacTests;
+			productReference = CB6AB27F1B3083890075AF04 /* HSLuvMacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CB6AB2A01B308A6F0075AF04 /* HUSLiOSTests */ = {
+		CB6AB2A01B308A6F0075AF04 /* HSLuviOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB6AB2A91B308A6F0075AF04 /* Build configuration list for PBXNativeTarget "HUSLiOSTests" */;
+			buildConfigurationList = CB6AB2A91B308A6F0075AF04 /* Build configuration list for PBXNativeTarget "HSLuviOSTests" */;
 			buildPhases = (
 				CB6AB29D1B308A6F0075AF04 /* Sources */,
 				CB6AB29E1B308A6F0075AF04 /* Frameworks */,
@@ -302,14 +300,14 @@
 			dependencies = (
 				CB339EF21B31F9E10067FDAF /* PBXTargetDependency */,
 			);
-			name = HUSLiOSTests;
-			productName = HUSLiOSTests;
-			productReference = CB6AB2A11B308A6F0075AF04 /* HUSLiOSTests.xctest */;
+			name = HSLuviOSTests;
+			productName = HSLuviOSTests;
+			productReference = CB6AB2A11B308A6F0075AF04 /* HSLuviOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CB98BFB31B307B070027506A /* HUSLTests */ = {
+		CB98BFB31B307B070027506A /* HSLuvTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB98BFBC1B307B070027506A /* Build configuration list for PBXNativeTarget "HUSLTests" */;
+			buildConfigurationList = CB98BFBC1B307B070027506A /* Build configuration list for PBXNativeTarget "HSLuvTests" */;
 			buildPhases = (
 				CB98BFB01B307B070027506A /* Sources */,
 				CB98BFB11B307B070027506A /* Frameworks */,
@@ -320,14 +318,14 @@
 			dependencies = (
 				CB339EEE1B31F9D20067FDAF /* PBXTargetDependency */,
 			);
-			name = HUSLTests;
-			productName = HUSLTests;
-			productReference = CB98BFB41B307B070027506A /* HUSLTests.xctest */;
+			name = HSLuvTests;
+			productName = HSLuvTests;
+			productReference = CB98BFB41B307B070027506A /* HSLuvTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CBDA801B1B2D2C740010C653 /* HUSLMac */ = {
+		CBDA801B1B2D2C740010C653 /* HSLuvMac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBDA80301B2D2C740010C653 /* Build configuration list for PBXNativeTarget "HUSLMac" */;
+			buildConfigurationList = CBDA80301B2D2C740010C653 /* Build configuration list for PBXNativeTarget "HSLuvMac" */;
 			buildPhases = (
 				CBDA80171B2D2C740010C653 /* Sources */,
 				CBDA80181B2D2C740010C653 /* Frameworks */,
@@ -338,9 +336,9 @@
 			);
 			dependencies = (
 			);
-			name = HUSLMac;
-			productName = HUSLSwift;
-			productReference = CBDA801C1B2D2C740010C653 /* HUSLSwift.framework */;
+			name = HSLuvMac;
+			productName = HSLuvSwift;
+			productReference = CBDA801C1B2D2C740010C653 /* HSLuvSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -380,7 +378,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CBDA80161B2D2C740010C653 /* Build configuration list for PBXProject "HUSLSwift" */;
+			buildConfigurationList = CBDA80161B2D2C740010C653 /* Build configuration list for PBXProject "HSLuvSwift" */;
 			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -392,11 +390,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBDA801B1B2D2C740010C653 /* HUSLMac */,
-				CB37B9041B2E7994009E63A5 /* HUSLiOS */,
-				CB98BFB31B307B070027506A /* HUSLTests */,
-				CB6AB27E1B3083890075AF04 /* HUSLMacTests */,
-				CB6AB2A01B308A6F0075AF04 /* HUSLiOSTests */,
+				CBDA801B1B2D2C740010C653 /* HSLuvMac */,
+				CB37B9041B2E7994009E63A5 /* HSLuviOS */,
+				CB98BFB31B307B070027506A /* HSLuvTests */,
+				CB6AB27E1B3083890075AF04 /* HSLuvMacTests */,
+				CB6AB2A01B308A6F0075AF04 /* HSLuviOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -474,7 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB98BFBF1B307B1D0027506A /* HUSLTests.swift in Sources */,
+				CB98BFBF1B307B1D0027506A /* HSLuvTests.swift in Sources */,
 				CB328E3B1B32050C0061A872 /* Snapshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,17 +493,17 @@
 /* Begin PBXTargetDependency section */
 		CB339EEE1B31F9D20067FDAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBDA801B1B2D2C740010C653 /* HUSLMac */;
+			target = CBDA801B1B2D2C740010C653 /* HSLuvMac */;
 			targetProxy = CB339EED1B31F9D20067FDAF /* PBXContainerItemProxy */;
 		};
 		CB339EF01B31F9DA0067FDAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBDA801B1B2D2C740010C653 /* HUSLMac */;
+			target = CBDA801B1B2D2C740010C653 /* HSLuvMac */;
 			targetProxy = CB339EEF1B31F9DA0067FDAF /* PBXContainerItemProxy */;
 		};
 		CB339EF21B31F9E10067FDAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB37B9041B2E7994009E63A5 /* HUSLiOS */;
+			target = CB37B9041B2E7994009E63A5 /* HSLuviOS */;
 			targetProxy = CB339EF11B31F9E10067FDAF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -523,8 +521,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftiOS;
-				PRODUCT_NAME = HUSLSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvSwiftiOS;
+				PRODUCT_NAME = HSLuvSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -546,8 +544,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftiOS;
-				PRODUCT_NAME = HUSLSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvSwiftiOS;
+				PRODUCT_NAME = HSLuvSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -567,7 +565,7 @@
 				DEVELOPMENT_TEAM = 2627WG76ES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLMacTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvMacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -582,7 +580,7 @@
 				DEVELOPMENT_TEAM = 2627WG76ES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLMacTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvMacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -596,7 +594,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLiOSTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuviOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
@@ -612,7 +610,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLiOSTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuviOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
@@ -630,7 +628,7 @@
 				DEVELOPMENT_TEAM = 2627WG76ES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -645,7 +643,7 @@
 				DEVELOPMENT_TEAM = 2627WG76ES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -762,8 +760,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftMac;
-				PRODUCT_NAME = HUSLSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvSwiftMac;
+				PRODUCT_NAME = HSLuvSwift;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -786,8 +784,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HUSLSwiftMac;
-				PRODUCT_NAME = HUSLSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvSwiftMac;
+				PRODUCT_NAME = HSLuvSwift;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 3.0;
@@ -797,7 +795,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB37B9161B2E7995009E63A5 /* Build configuration list for PBXNativeTarget "HUSLiOS" */ = {
+		CB37B9161B2E7995009E63A5 /* Build configuration list for PBXNativeTarget "HSLuviOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB37B9171B2E7995009E63A5 /* Debug */,
@@ -806,7 +804,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB6AB2891B3083890075AF04 /* Build configuration list for PBXNativeTarget "HUSLMacTests" */ = {
+		CB6AB2891B3083890075AF04 /* Build configuration list for PBXNativeTarget "HSLuvMacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB6AB2871B3083890075AF04 /* Debug */,
@@ -815,7 +813,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB6AB2A91B308A6F0075AF04 /* Build configuration list for PBXNativeTarget "HUSLiOSTests" */ = {
+		CB6AB2A91B308A6F0075AF04 /* Build configuration list for PBXNativeTarget "HSLuviOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB6AB2AA1B308A6F0075AF04 /* Debug */,
@@ -824,7 +822,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB98BFBC1B307B070027506A /* Build configuration list for PBXNativeTarget "HUSLTests" */ = {
+		CB98BFBC1B307B070027506A /* Build configuration list for PBXNativeTarget "HSLuvTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB98BFBD1B307B070027506A /* Debug */,
@@ -833,7 +831,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBDA80161B2D2C740010C653 /* Build configuration list for PBXProject "HUSLSwift" */ = {
+		CBDA80161B2D2C740010C653 /* Build configuration list for PBXProject "HSLuvSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBDA802E1B2D2C740010C653 /* Debug */,
@@ -842,7 +840,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBDA80301B2D2C740010C653 /* Build configuration list for PBXNativeTarget "HUSLMac" */ = {
+		CBDA80301B2D2C740010C653 /* Build configuration list for PBXNativeTarget "HSLuvMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBDA80311B2D2C740010C653 /* Debug */,

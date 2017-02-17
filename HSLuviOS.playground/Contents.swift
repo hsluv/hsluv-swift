@@ -1,9 +1,9 @@
-//: # HUSLSwift
+//: # HSLuvSwift
 //:
-//: Swift port of HUSL, a human-friendly alternative to HSL
+//: Swift port of HSLuv, a human-friendly alternative to HSL
 
 import UIKit
-import HUSLSwift
+import HSLuvSwift
 
 //: ## Examples
 //:

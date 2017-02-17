@@ -263,57 +263,57 @@ func lchToLuv(_ lch: LCHTuple) -> LUVTuple {
 }
 
 
-// MARK: - HUSL/LCH Conversion
+// MARK: - HSLuv/LCH Conversion
 
-func huslToLch(_ husl: HUSLTuple) -> LCHTuple {
-  guard husl.L <= 99.9999999 && husl.L >= 0.00000001 else {
+func hsluvToLch(_ hsluv: HSLuvTuple) -> LCHTuple {
+  guard hsluv.L <= 99.9999999 && hsluv.L >= 0.00000001 else {
     // White and black: disambiguate chroma
-    return LCHTuple(husl.L, 0, husl.H)
+    return LCHTuple(hsluv.L, 0, hsluv.H)
   }
   
-  let max = maxChroma(lightness: husl.L, hue: husl.H)
-  let C = max / 100 * husl.S
+  let max = maxChroma(lightness: hsluv.L, hue: hsluv.H)
+  let C = max / 100 * hsluv.S
   
-  return LCHTuple(husl.L, C, husl.H)
+  return LCHTuple(hsluv.L, C, hsluv.H)
 }
 
-func lchToHusl(_ lch: LCHTuple) -> HUSLTuple {
+func lchToHsluv(_ lch: LCHTuple) -> HSLuvTuple {
   guard lch.L <= 99.9999999 && lch.L >= 0.00000001 else {
     // White and black: disambiguate saturation
-    return HUSLTuple(lch.H, 0, lch.L)
+    return HSLuvTuple(lch.H, 0, lch.L)
   }
   
   let max = maxChroma(lightness: lch.L, hue: lch.H)
   let S = lch.C / max * 100
   
-  return HUSLTuple(lch.H, S, lch.L)
+  return HSLuvTuple(lch.H, S, lch.L)
 }
 
 
-// MARK: - Pastel HUSL/LCH Conversion
+// MARK: - Pastel HSLuv/LCH Conversion
 
-func huslpToLch(_ husl: HUSLTuple) -> LCHTuple {
-  guard husl.L <= 99.9999999 && husl.L >= 0.00000001 else {
+func hpluvToLch(_ hsluv: HSLuvTuple) -> LCHTuple {
+  guard hsluv.L <= 99.9999999 && hsluv.L >= 0.00000001 else {
     // White and black: disambiguate chroma
-    return LCHTuple(husl.L, 0, husl.H)
+    return LCHTuple(hsluv.L, 0, hsluv.H)
   }
   
-  let max = maxChroma(lightness: husl.L)
-  let C = max / 100 * husl.S
+  let max = maxChroma(lightness: hsluv.L)
+  let C = max / 100 * hsluv.S
   
-  return LCHTuple(husl.L, C, husl.H)
+  return LCHTuple(hsluv.L, C, hsluv.H)
 }
 
-func lchToHuslp(_ lch: LCHTuple) -> HUSLTuple {
+func lchToHpluv(_ lch: LCHTuple) -> HSLuvTuple {
   guard lch.L <= 99.9999999 && lch.L >= 0.00000001 else {
     // White and black: disambiguate saturation
-    return HUSLTuple(lch.H, 0, lch.L)
+    return HSLuvTuple(lch.H, 0, lch.L)
   }
   
   let max = maxChroma(lightness: lch.L)
   let S = lch.C / max * 100
 
-  return HUSLTuple(lch.H, S, lch.L)
+  return HSLuvTuple(lch.H, S, lch.L)
 }
 
 // MARK: - RGB/Hex Conversion
@@ -360,12 +360,12 @@ func hexToRgb(_ hex: Hex) -> RGBTuple {
 
 // MARK: - Conversion shortcuts
 
-func huslToRgb(_ hsl: HUSLTuple) -> RGBTuple {
-  return xyzToRgb(luvToXyz(lchToLuv(huslToLch(hsl))))
+func hsluvToRgb(_ hsl: HSLuvTuple) -> RGBTuple {
+  return xyzToRgb(luvToXyz(lchToLuv(hsluvToLch(hsl))))
 }
 
-func rgbToHusl(_ rgb: RGBTuple) -> HUSLTuple {
-  return lchToHusl(luvToLch(xyzToLuv(rgbToXyz(rgb))))
+func rgbToHsluv(_ rgb: RGBTuple) -> HSLuvTuple {
+  return lchToHsluv(luvToLch(xyzToLuv(rgbToXyz(rgb))))
 }
 
 

@@ -26,14 +26,14 @@ import UIKit
 
 public extension UIColor {
   /// Initializes and returns a color object using the specified opacity and
-  /// HUSL color space component values.
+  /// HSLuv color space component values.
   ///
   /// - parameter hue: Double
   /// - parameter saturation: Double
   /// - parameter lightness: Double
   /// - parameter alpha: Double
   convenience init(hue: Double, saturation: Double, lightness: Double, alpha: Double) {
-    let rgb = huslToRgb(HUSLTuple(hue, saturation, lightness))
+    let rgb = hsluvToRgb(HSLuvTuple(hue, saturation, lightness))
     self.init(red: CGFloat(rgb.R), green: CGFloat(rgb.G), blue: CGFloat(rgb.B), alpha: CGFloat(alpha))
   }
 }
