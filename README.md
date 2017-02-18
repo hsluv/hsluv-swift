@@ -42,10 +42,10 @@ end
 
 ### Carthage
 
-Add `github "hsluv/husl-swift" ~> 1.1.0` to your Cartfile and run `carthage bootstrap`. This builds frameworks for Mac and iOS targets. 
+Add `github "hsluv/hsluv-swift" ~> 1.1.0` to your Cartfile and run `carthage bootstrap`. This builds frameworks for Mac and iOS targets. 
 
 ```sh
-> echo 'github "hsluv/husl-swift" ~> 1.1.0' >> Cartfile
+> echo 'github "hsluv/hsluv-swift" ~> 1.1.0' >> Cartfile
 > carthage bootstrap
 ```
 
