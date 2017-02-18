@@ -16,10 +16,10 @@ This framework adds a single initializer on the OS-specific color class to creat
 
 ```swift
 // OSX
-let color = NSColor(hue: 360.0, saturation: 100.0, lightness: l00.0, alpha: 1.0)
+let color = NSColor(hue: 360.0, saturation: 100.0, lightness: 100.0, alpha: 1.0)
 
 // iOS
-let color = UIColor(hue: 360.0, saturation: 100.0, lightness: l00.0, alpha: 1.0)
+let color = UIColor(hue: 360.0, saturation: 100.0, lightness: 100.0, alpha: 1.0)
 ```
 
 
@@ -36,16 +36,16 @@ platform :ios, '8.0' # or, :osx, '10.10'
 use_frameworks!
 
 target 'YourProject' do
-pod 'HSLuvSwift', '~> 1.1.0'
+pod 'HSLuvSwift', '~> 2.0.0'
 end
 ```
 
 ### Carthage
 
-Add `github "hsluv/hsluv-swift" ~> 1.1.0` to your Cartfile and run `carthage bootstrap`. This builds frameworks for Mac and iOS targets. 
+Add `github "hsluv/hsluv-swift" ~> 2.0.0` to your Cartfile and run `carthage bootstrap`. This builds frameworks for Mac and iOS targets. 
 
 ```sh
-> echo 'github "hsluv/hsluv-swift" ~> 1.1.0' >> Cartfile
+> echo 'github "hsluv/hsluv-swift" ~> 2.0.0' >> Cartfile
 > carthage bootstrap
 ```
 
