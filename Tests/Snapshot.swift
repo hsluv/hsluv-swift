@@ -19,9 +19,9 @@ class Snapshot {
     let samples = "0123456789abcdef"
     
     var hexSamples = [String]()
-    for (_, r) in samples.characters.enumerated() {
-      for (_, g) in samples.characters.enumerated() {
-        for (_, b) in samples.characters.enumerated() {
+    for (_, r) in samples.enumerated() {
+      for (_, g) in samples.enumerated() {
+        for (_, b) in samples.enumerated() {
           hexSamples.append("#\(r)\(r)\(g)\(g)\(b)\(b)")
         }
       }
