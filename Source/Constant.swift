@@ -46,5 +46,5 @@ struct Constant {
   static var epsilon = 0.0088564516790356308
   
   // Swift limitations
-  static var maxDouble = Double(FLT_MAX)
+  static var maxDouble = Double.greatestFiniteMagnitude
 }

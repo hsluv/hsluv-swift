@@ -37,21 +37,21 @@ class HSLuvTests: XCTestCase {
       let toRgb = xyzToRgb(toXyz)
       let toHex = rgbToHex(toRgb)
 
-      XCTAssertEqualWithAccuracy(fromLch.L, toLch.L, accuracy: rgbRangeTolerance)
-      XCTAssertEqualWithAccuracy(fromLch.C, toLch.C, accuracy: rgbRangeTolerance)
-      XCTAssertEqualWithAccuracy(fromLch.H, toLch.H, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromLch.L, toLch.L, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromLch.C, toLch.C, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromLch.H, toLch.H, accuracy: rgbRangeTolerance)
       
-      XCTAssertEqualWithAccuracy(fromLuv.L, toLuv.L, accuracy: rgbRangeTolerance)
-      XCTAssertEqualWithAccuracy(fromLuv.U, toLuv.U, accuracy: rgbRangeTolerance)
-      XCTAssertEqualWithAccuracy(fromLuv.V, toLuv.V, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromLuv.L, toLuv.L, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromLuv.U, toLuv.U, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromLuv.V, toLuv.V, accuracy: rgbRangeTolerance)
       
-      XCTAssertEqualWithAccuracy(fromXyz.X, toXyz.X, accuracy: rgbRangeTolerance)
-      XCTAssertEqualWithAccuracy(fromXyz.Y, toXyz.Y, accuracy: rgbRangeTolerance)
-      XCTAssertEqualWithAccuracy(fromXyz.Z, toXyz.Z, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromXyz.X, toXyz.X, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromXyz.Y, toXyz.Y, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromXyz.Z, toXyz.Z, accuracy: rgbRangeTolerance)
       
-      XCTAssertEqualWithAccuracy(fromRgb.R, toRgb.R, accuracy: rgbRangeTolerance)
-      XCTAssertEqualWithAccuracy(fromRgb.G, toRgb.G, accuracy: rgbRangeTolerance)
-      XCTAssertEqualWithAccuracy(fromRgb.B, toRgb.B, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromRgb.R, toRgb.R, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromRgb.G, toRgb.G, accuracy: rgbRangeTolerance)
+        XCTAssertEqual(fromRgb.B, toRgb.B, accuracy: rgbRangeTolerance)
       
       XCTAssertEqual(fromHex, toHex.string)
     }

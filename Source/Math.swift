@@ -111,7 +111,7 @@ func maxChroma(lightness L: Double) -> Double {
 /// For a given lightness and hue, return the maximum chroma that fits in
 /// the RGB gamut.
 func maxChroma(lightness L: Double, hue H: Double) -> Double {
-  let hrad = H / 360 * M_PI * 2
+  let hrad = H / 360 * Double.pi * 2
   
   var lengths = [Double]()
   for line in getBounds(lightness: L) {
@@ -245,7 +245,7 @@ func luvToLch(_ luv: LUVTuple) -> LCHTuple {
   }
   
   let Hrad = atan2(luv.V, luv.U)
-  var H = Hrad * 360 / 2 / M_PI
+  var H = Hrad * 360 / 2 / Double.pi
   
   if H < 0 {
     H = 360 + H
@@ -255,7 +255,7 @@ func luvToLch(_ luv: LUVTuple) -> LCHTuple {
 }
 
 func lchToLuv(_ lch: LCHTuple) -> LUVTuple {
-  let Hrad = lch.H / 360 * 2 * M_PI
+  let Hrad = lch.H / 360 * 2 * Double.pi
   let U = cos(Hrad) * lch.C
   let V = sin(Hrad) * lch.C
   
