@@ -1,0 +1,14 @@
+disabled_rules: # rule identifiers to exclude from running
+  - identifier_name
+  - large_tuple
+
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly

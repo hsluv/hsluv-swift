@@ -20,12 +20,11 @@ fiftyPcView.backgroundColor = fiftyPc
 //: ## Let's make a rainbow!
 var colors = [UIColor?]()
 for H in stride(from: 0, through: 360, by: 5.0) {
-  colors.append(UIColor(hue: H, saturation: 100.0, lightness: 50.0, alpha: 1.0))
+    colors.append(UIColor(hue: H, saturation: 100.0, lightness: 50.0, alpha: 1.0))
 }
 
 if #available(iOS 9.0, *) {
     var palette = PaletteView(frame: CGRect(x: 0, y: 0, width: 500, height: 100), numberOfColors: 37)
-  
-  palette.addColors(colors)
-}
 
+    palette.addColors(colors)
+}
