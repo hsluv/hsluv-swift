@@ -359,3 +359,11 @@ func hsluvToRgb(_ hsl: HSLuvTuple) -> RGBTuple {
 func rgbToHsluv(_ rgb: RGBTuple) -> HSLuvTuple {
     return lchToHsluv(luvToLch(xyzToLuv(rgbToXyz(rgb))))
 }
+
+func hpluvToRgb(_ hsl: HSLuvTuple) -> RGBTuple {
+    return xyzToRgb(luvToXyz(lchToLuv(hpluvToLch(hsl))))
+}
+
+func rgbToHpluv(_ rgb: RGBTuple) -> HSLuvTuple {
+    return lchToHpluv(luvToLch(xyzToLuv(rgbToXyz(rgb))))
+}
