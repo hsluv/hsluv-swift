@@ -103,12 +103,12 @@ struct LCHTuple {
 }
 
 /// Hue(man), Saturation, Lightness (HSLuv)
-struct HSLuvTuple {
-    var H: Double
-    var S: Double
-    var L: Double
+public struct HSLuvTuple {
+    public var H: Double
+    public var S: Double
+    public var L: Double
 
-    init(_ H: Double, _ S: Double, _ L: Double) {
+    public init(_ H: Double, _ S: Double, _ L: Double) {
         self.H = H
         self.S = S
         self.L = L
@@ -116,12 +116,12 @@ struct HSLuvTuple {
 }
 
 /// Hue(man), Pastel saturation, Lightness (HPLuv)
-struct HPLuvTuple {
-    var H: Double
-    var P: Double
-    var L: Double
+public struct HPLuvTuple {
+    public var H: Double
+    public var P: Double
+    public var L: Double
 
-    init(_ H: Double, _ P: Double, _ L: Double) {
+    public init(_ H: Double, _ P: Double, _ L: Double) {
         self.H = H
         self.P = P
         self.L = L

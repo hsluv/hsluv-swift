@@ -60,7 +60,7 @@ class Snapshot {
                 "luv": [luv.L, luv.U, luv.V],
                 "lch": [lch.L, lch.C, lch.H],
                 "hsluv": [hsluv.H, hsluv.S, hsluv.L],
-                "hpluv": [hpluv.H, hpluv.S, hpluv.L]
+                "hpluv": [hpluv.H, hpluv.P, hpluv.L]
             ]
         }
 

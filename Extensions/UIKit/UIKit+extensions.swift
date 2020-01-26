@@ -24,30 +24,5 @@
 
 import UIKit
 
-public extension UIColor {
-
-  /// Initializes and returns a color object using the specified opacity and
-  /// HSLuv color space component values.
-  ///
-  /// - parameter hue: Double
-  /// - parameter saturation: Double
-  /// - parameter lightness: Double
-  /// - parameter alpha: Double
-  convenience init(hue: Double, saturation: Double, lightness: Double, alpha: Double) {
-    let rgb = hsluvToRgb(HSLuvTuple(hue, saturation, lightness))
-    self.init(red: CGFloat(rgb.R), green: CGFloat(rgb.G), blue: CGFloat(rgb.B), alpha: CGFloat(alpha))
-  }
-
-    /// Initializes and returns a color object using the specified opacity and
-    /// HPLuv color space component values.
-    ///
-    /// - parameter hue: Double
-    /// - parameter pastelSaturation: Double
-    /// - parameter lightness: Double
-    /// - parameter alpha: Double
-    convenience init(hue: Double, pastelSaturation: Double, lightness: Double, alpha: Double) {
-      let rgb = hpluvToRgb(HSLuvTuple(hue, pastelSaturation, lightness))
-      self.init(red: CGFloat(rgb.R), green: CGFloat(rgb.G), blue: CGFloat(rgb.B), alpha: CGFloat(alpha))
-    }
-
-}
+extension UIColor: HSLuvInitializable {}
+extension UIColor: HPLuvInitializable {}

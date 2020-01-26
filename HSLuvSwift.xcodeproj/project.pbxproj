@@ -25,6 +25,8 @@
 		CBCAD5351B2F88AD00D0366A /* ColorEncodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */; };
 		CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80361B2D2CBF0010C653 /* Constant.swift */; };
 		CBDA80391B2D2CBF0010C653 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDA80371B2D2CBF0010C653 /* Math.swift */; };
+		DB6BA7CE23DDA9C100F1F964 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BA7CD23DDA9C100F1F964 /* Protocols.swift */; };
+		DB6BA7CF23DDA9C100F1F964 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BA7CD23DDA9C100F1F964 /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,7 @@
 		CBDA80361B2D2CBF0010C653 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Source/Constant.swift; sourceTree = SOURCE_ROOT; };
 		CBDA80371B2D2CBF0010C653 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Math.swift; path = Source/Math.swift; sourceTree = SOURCE_ROOT; };
 		CBDD2B131B461C3000E4548F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DB6BA7CD23DDA9C100F1F964 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Source/Protocols.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,7 @@
 				CBDA80361B2D2CBF0010C653 /* Constant.swift */,
 				CBCAD5331B2F88AB00D0366A /* ColorEncodings.swift */,
 				CBDA80371B2D2CBF0010C653 /* Math.swift */,
+				DB6BA7CD23DDA9C100F1F964 /* Protocols.swift */,
 				CB8B96C41B2D59C7000F303C /* Supporting Files */,
 			);
 			name = Source;
@@ -461,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6BA7CF23DDA9C100F1F964 /* Protocols.swift in Sources */,
 				CB37B91C1B2E79A5009E63A5 /* Constant.swift in Sources */,
 				CBCAD5351B2F88AD00D0366A /* ColorEncodings.swift in Sources */,
 				CB37B91D1B2E79A8009E63A5 /* Math.swift in Sources */,
@@ -499,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6BA7CE23DDA9C100F1F964 /* Protocols.swift in Sources */,
 				CBDA80381B2D2CBF0010C653 /* Constant.swift in Sources */,
 				CBCAD5341B2F88AB00D0366A /* ColorEncodings.swift in Sources */,
 				CBDA80391B2D2CBF0010C653 /* Math.swift in Sources */,
