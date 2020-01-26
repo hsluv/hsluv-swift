@@ -114,3 +114,16 @@ struct HSLuvTuple {
         self.L = L
     }
 }
+
+/// Hue(man), Pastel saturation, Lightness (HPLuv)
+struct HPLuvTuple {
+    var H: Double
+    var P: Double
+    var L: Double
+
+    init(_ H: Double, _ P: Double, _ L: Double) {
+        self.H = H
+        self.P = P
+        self.L = L
+    }
+}
