@@ -60,14 +60,6 @@ extension HSLuvInitializable {
         self.init(red: CGFloat(rgb.R), green: CGFloat(rgb.G), blue: CGFloat(rgb.B), alpha: CGFloat(alpha))
     }
 
-    /// Initializes and returns a color object using the specified HSLuv tuple
-    ///
-    /// - parameter hsluv: HSLuvTuple
-    /// - parameter alpha: Double
-    init(_ hsluv: HSLuvTuple, alpha: Double = 1) {
-        self.init(hue: hsluv.H, saturation: hsluv.S, lightness: hsluv.L, alpha: alpha)
-    }
-
 }
 
 public protocol HPLuvInitializable: Color {}
@@ -83,14 +75,6 @@ extension HPLuvInitializable {
     public init(hue: Double, pastelSaturation: Double, lightness: Double, alpha: Double) {
         let rgb = hpluvToRgb(HSLuvTuple(hue, pastelSaturation, lightness))
         self.init(red: CGFloat(rgb.R), green: CGFloat(rgb.G), blue: CGFloat(rgb.B), alpha: CGFloat(alpha))
-    }
-
-    /// Initializes and returns a color object using the specified HPLuv tuple
-    ///
-    /// - parameter hsluv: HPLuvTuple
-    /// - parameter alpha: Double
-    init(_ hpluv: HPLuvTuple, alpha: Double = 1) {
-        self.init(hue: hpluv.H, pastelSaturation: hpluv.P, lightness: hpluv.L, alpha: alpha)
     }
 
 }
