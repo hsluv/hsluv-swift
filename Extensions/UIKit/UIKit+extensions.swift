@@ -24,5 +24,15 @@
 
 import UIKit
 
-extension UIColor: HSLuvInitializable {}
+extension UIColor: HSLuvInitializable {
+
+    /// Convenience function to wrap the behavior of getRed(red:green:blue:alpha:)
+    public func getRGB() -> (red: CGFloat, green: CGFloat, blue: CGFloat) {
+        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        return (red, green, blue)
+    }
+
+}
+
 extension UIColor: HPLuvInitializable {}

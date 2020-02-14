@@ -26,12 +26,27 @@ import CoreGraphics
 
 // Abstracts NSColor / UIColor
 public protocol Color {
+
     init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
+
+    /// Convenience function to wrap the behavior of getRed(red:green:blue:alpha:)
+    func getRGB() -> (red: CGFloat, green: CGFloat, blue: CGFloat)
+
 }
 
-public protocol HSLuvInitializable: Color {}
+extension Color {
 
-public extension HSLuvInitializable {
+    func getRGBTuple() -> RGBTuple {
+        let (red, green, blue) = getRGB()
+        return RGBTuple(Double(red), Double(green), Double(blue))
+    }
+
+}
+
+// MARK: - Initialization protocols
+
+public protocol HSLuvInitializable: Color {}
+extension HSLuvInitializable {
 
     /// Initializes and returns a color object using the specified opacity and
     /// HSLuv color space component values.
@@ -40,7 +55,7 @@ public extension HSLuvInitializable {
     /// - parameter saturation: Double
     /// - parameter lightness: Double
     /// - parameter alpha: Double
-    init(hue: Double, saturation: Double, lightness: Double, alpha: Double) {
+    public init(hue: Double, saturation: Double, lightness: Double, alpha: Double) {
         let rgb = hsluvToRgb(HSLuvTuple(hue, saturation, lightness))
         self.init(red: CGFloat(rgb.R), green: CGFloat(rgb.G), blue: CGFloat(rgb.B), alpha: CGFloat(alpha))
     }
@@ -56,8 +71,7 @@ public extension HSLuvInitializable {
 }
 
 public protocol HPLuvInitializable: Color {}
-
-public extension HSLuvInitializable {
+extension HPLuvInitializable {
 
     /// Initializes and returns a color object using the specified opacity and
     /// HPLuv color space component values.
@@ -66,7 +80,7 @@ public extension HSLuvInitializable {
     /// - parameter pastelSaturation: Double
     /// - parameter lightness: Double
     /// - parameter alpha: Double
-    init(hue: Double, pastelSaturation: Double, lightness: Double, alpha: Double) {
+    public init(hue: Double, pastelSaturation: Double, lightness: Double, alpha: Double) {
         let rgb = hpluvToRgb(HSLuvTuple(hue, pastelSaturation, lightness))
         self.init(red: CGFloat(rgb.R), green: CGFloat(rgb.G), blue: CGFloat(rgb.B), alpha: CGFloat(alpha))
     }
@@ -76,7 +90,45 @@ public extension HSLuvInitializable {
     /// - parameter hsluv: HPLuvTuple
     /// - parameter alpha: Double
     init(_ hpluv: HPLuvTuple, alpha: Double = 1) {
-        self.init(hue: hpluv.H, saturation: hpluv.P, lightness: hpluv.L, alpha: alpha)
+        self.init(hue: hpluv.H, pastelSaturation: hpluv.P, lightness: hpluv.L, alpha: alpha)
+    }
+
+}
+
+// MARK: - To HSLuv HPLuv conversions
+
+extension HSLuvTuple {
+
+    init(_ color: Color) {
+        self = rgbToHsluv(color.getRGBTuple())
+    }
+
+}
+
+extension HPLuvTuple {
+
+    init(_ color: Color) {
+        self = rgbToHpluv(color.getRGBTuple())
+    }
+
+}
+
+public protocol HSLuvConvertible: Color {}
+extension HSLuvConvertible {
+
+    /// Returns the HSLuv color space component values for this color.
+    public func getHSLuv() -> (hue: Double, saturation: Double, lightness: Double) {
+        HSLuvTuple(self).tuple
+    }
+
+}
+
+public protocol HPLuvConvertible: Color {}
+extension HPLuvConvertible {
+
+    /// Returns the HPLuv color space component values for this color.
+    public func getHPLuv() -> (hue: Double, pastelSaturation: Double, lightness: Double) {
+        HPLuvTuple(self).tuple
     }
 
 }

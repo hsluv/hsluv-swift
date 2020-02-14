@@ -55,7 +55,7 @@ struct RGBTuple: TupleConverter {
     }
 
     var tuple: Tuple {
-        return (R, G, B)
+        (R, G, B)
     }
 }
 
@@ -72,7 +72,7 @@ struct XYZTuple: TupleConverter {
     }
 
     var tuple: Tuple {
-        return (X, Y, Z)
+        (X, Y, Z)
     }
 }
 
@@ -103,27 +103,35 @@ struct LCHTuple {
 }
 
 /// Hue(man), Saturation, Lightness (HSLuv)
-public struct HSLuvTuple {
-    public var H: Double
-    public var S: Double
-    public var L: Double
+struct HSLuvTuple: TupleConverter {
+    var H: Double
+    var S: Double
+    var L: Double
 
-    public init(_ H: Double, _ S: Double, _ L: Double) {
+    init(_ H: Double, _ S: Double, _ L: Double) {
         self.H = H
         self.S = S
         self.L = L
     }
+
+    var tuple: Tuple {
+        (H, S, L)
+    }
 }
 
 /// Hue(man), Pastel saturation, Lightness (HPLuv)
-public struct HPLuvTuple {
-    public var H: Double
-    public var P: Double
-    public var L: Double
+struct HPLuvTuple: TupleConverter {
+    var H: Double
+    var P: Double
+    var L: Double
 
-    public init(_ H: Double, _ P: Double, _ L: Double) {
+    init(_ H: Double, _ P: Double, _ L: Double) {
         self.H = H
         self.P = P
         self.L = L
+    }
+
+    var tuple: Tuple {
+        (H, P, L)
     }
 }
