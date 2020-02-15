@@ -2,11 +2,11 @@ language: objective-c
 osx_image: xcode11.3
 env:
   global:
-    - IOS_SDK=iphonesimulator11.2
-    - OSX_SDK=macosx10.13
+    - IOS_SDK=iphonesimulator13.2
+    - OSX_SDK=macosx10.15
   matrix:
     - SCHEME=HSLuvMac TEST_SDK=$OSX_SDK DESTINATION="arch=x86_64"
-    - SCHEME=HSLuviOS TEST_SDK=$IOS_SDK DESTINATION="OS=11.2,platform=iOS Simulator,id=9C4C0DDA-839D-4851-AA09-4382DB814A63"
+    - SCHEME=HSLuviOS TEST_SDK=$IOS_SDK DESTINATION="OS=13.2,platform=iOS Simulator,id=9C4C0DDA-839D-4851-AA09-4382DB814A63"
 script:
   - set -o pipefail
   - xcodebuild -version
