@@ -6,7 +6,7 @@ env:
     - OSX_SDK=macosx10.15
   matrix:
     - SCHEME=HSLuvMac TEST_SDK=$OSX_SDK DESTINATION="arch=x86_64"
-    - SCHEME=HSLuviOS TEST_SDK=$IOS_SDK DESTINATION="OS=13.2,platform=iOS Simulator,id=9C4C0DDA-839D-4851-AA09-4382DB814A63"
+    - SCHEME=HSLuviOS TEST_SDK=$IOS_SDK DESTINATION="OS=13.2,platform=iOS Simulator,id=8CD72926-1BD5-41EB-9045-03A9239A822F"
 script:
   - set -o pipefail
   - xcodebuild -version
