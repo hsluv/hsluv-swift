@@ -22,9 +22,17 @@
 // SOFTWARE.
 //
 
+#if os(iOS)
 import UIKit
 
-public extension UIColor {
+private typealias Color = UIColor
+#elseif os(macOS)
+import AppKit
+
+private typealias Color = NSColor
+#endif
+
+public extension Color {
   /// Initializes and returns a color object using the specified opacity and
   /// HSLuv color space component values.
   ///

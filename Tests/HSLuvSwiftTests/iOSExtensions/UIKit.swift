@@ -26,7 +26,9 @@ import Foundation
 import XCTest
 import HSLuvSwift
 
-extension NSColor {
+#if canImport(UIKit)
+
+extension UIColor {
     /// Convenience function to wrap the behavior of getRed(red:green:blue:alpha:)
     ///
     /// - returns: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
@@ -42,14 +44,14 @@ extension NSColor {
     }
 }
 
-class AppKitTests: XCTestCase {
+class UIKitTests: XCTestCase {
     let rgbRangeTolerance = 0.00000000001
 
-    func testNSColorRGBRangeTolerance() {
-        for h in stride(from: 0.0, through: 360, by: 5) {
-            for s in stride(from: 0.0, through: 100, by: 5) {
-                for l in stride(from: 0.0, through: 100, by: 5) {
-                    let color = NSColor(hue: h, saturation: s, lightness: l, alpha: 1.0)
+    func testUIColorRGBRangeTolerance() {
+        for h in stride(from: 0, through: 360, by: 5) {
+            for s in stride(from: 0, through: 100, by: 5) {
+                for l in stride(from: 0, through: 100, by: 5) {
+                    let color = UIColor(hue: Double(h), saturation: Double(s), lightness: Double(l), alpha: 1.0)
 
                     XCTAssertNotNil(color)
 
@@ -65,3 +67,5 @@ class AppKitTests: XCTestCase {
         }
     }
 }
+
+#endif
