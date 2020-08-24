@@ -296,16 +296,16 @@ func hpluvToLch(_ hsluv: HSLuvTuple) -> LCHTuple {
     return LCHTuple(hsluv.L, C, hsluv.H)
 }
 
-func lchToHpluv(_ lch: LCHTuple) -> HSLuvTuple {
+func lchToHpluv(_ lch: LCHTuple) -> HPLuvTuple {
     guard lch.L <= 99.9999999 && lch.L >= 0.00000001 else {
         // White and black: disambiguate saturation
-        return HSLuvTuple(lch.H, 0, lch.L)
+        return HPLuvTuple(lch.H, 0, lch.L)
     }
 
     let max = maxChroma(lightness: lch.L)
     let S = lch.C / max * 100
 
-    return HSLuvTuple(lch.H, S, lch.L)
+    return HPLuvTuple(lch.H, S, lch.L)
 }
 
 // MARK: - RGB/Hex Conversion
@@ -358,4 +358,12 @@ func hsluvToRgb(_ hsl: HSLuvTuple) -> RGBTuple {
 
 func rgbToHsluv(_ rgb: RGBTuple) -> HSLuvTuple {
     return lchToHsluv(luvToLch(xyzToLuv(rgbToXyz(rgb))))
+}
+
+func hpluvToRgb(_ hsl: HSLuvTuple) -> RGBTuple {
+    return xyzToRgb(luvToXyz(lchToLuv(hpluvToLch(hsl))))
+}
+
+func rgbToHpluv(_ rgb: RGBTuple) -> HPLuvTuple {
+    return lchToHpluv(luvToLch(xyzToLuv(rgbToXyz(rgb))))
 }

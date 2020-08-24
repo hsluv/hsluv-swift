@@ -52,13 +52,15 @@ class Snapshot {
             let luv = xyzToLuv(xyz)
             let lch = luvToLch(luv)
             let hsluv = lchToHsluv(lch)
+            let hpluv = lchToHpluv(lch)
 
             current[sample] = [
                 "rgb": [rgb.R, rgb.G, rgb.B],
                 "xyz": [xyz.X, xyz.Y, xyz.Z],
                 "luv": [luv.L, luv.U, luv.V],
                 "lch": [lch.L, lch.C, lch.H],
-                "hsluv": [hsluv.H, hsluv.S, hsluv.L]
+                "hsluv": [hsluv.H, hsluv.S, hsluv.L],
+                "hpluv": [hpluv.H, hpluv.P, hpluv.L]
             ]
         }
 
@@ -74,10 +76,6 @@ class Snapshot {
             }
 
             tags: for (tag, stableTuple) in stableSamples {
-                if tag == "hpluv" {
-                    continue tags
-                }
-
                 guard let currentTuple = currentSamples[tag] else {
                     fatalError("Current tuple is missing at \(hex):\(tag)")
                 }
