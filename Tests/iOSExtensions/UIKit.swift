@@ -26,6 +26,22 @@ import Foundation
 import XCTest
 import HSLuvSwift
 
+extension UIColor {
+    /// Convenience function to wrap the behavior of getRed(red:green:blue:alpha:)
+    ///
+    /// - returns: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
+    func getRGB() -> (red: Double, green: Double, blue: Double, alpha: Double) {
+        var red: CGFloat = 0.0
+        var green: CGFloat = 0.0
+        var blue: CGFloat = 0.0
+        var alpha: CGFloat = 0.0
+
+        self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+
+        return (red: Double(red), green: Double(green), blue: Double(blue), alpha: Double(alpha))
+    }
+}
+
 class UIKitTests: XCTestCase {
     let rgbRangeTolerance = 0.00000000001
 
@@ -38,7 +54,7 @@ class UIKitTests: XCTestCase {
                     XCTAssertNotNil(color)
 
                     let tRgb = color.getRGB()
-                    let rgb = [tRgb.red, tRgb.green, tRgb.blue].map { Double($0) }
+                    let rgb = [tRgb.red, tRgb.green, tRgb.blue]
 
                     for channel in rgb {
                         XCTAssertGreaterThan(channel, -rgbRangeTolerance, "HSLuv: \([h, s, l]) -> RGB: \(rgb)")

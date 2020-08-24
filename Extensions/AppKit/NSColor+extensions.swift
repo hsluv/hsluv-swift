@@ -24,15 +24,16 @@
 
 import AppKit
 
-extension NSColor: HSLuvInitializable, HSLuvConvertible {
-
-    /// Convenience function to wrap the behavior of getRed(red:green:blue:alpha:)
-    public func getRGB() -> (red: CGFloat, green: CGFloat, blue: CGFloat) {
-        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
-        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        return (red, green, blue)
-    }
-
+public extension NSColor {
+  /// Initializes and returns a color object using the specified opacity and
+  /// HSLuv color space component values.
+  ///
+  /// - parameter hue: Double
+  /// - parameter saturation: Double
+  /// - parameter lightness: Double
+  /// - parameter alpha: Double
+  convenience init(hue: Double, saturation: Double, lightness: Double, alpha: Double) {
+    let rgb = hsluvToRgb(HSLuvTuple(hue, saturation, lightness))
+    self.init(red: CGFloat(rgb.R), green: CGFloat(rgb.G), blue: CGFloat(rgb.B), alpha: CGFloat(alpha))
+  }
 }
-
-extension NSColor: HPLuvInitializable, HPLuvConvertible {}
