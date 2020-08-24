@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source_files     = 'Source/*.{swift}'
   s.frameworks       = 'Foundation'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '13.2'
   s.ios.source_files = 'Extensions/UIKit/*.{swift}'
   s.ios.frameworks   = 'UIKit'
 
