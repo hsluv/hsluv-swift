@@ -22,10 +22,19 @@
 // SOFTWARE.
 //
 
+#if os(iOS)
+import UIKit
+
+private typealias SystemColor = UIColor
+#elseif os(macOS)
 import AppKit
 
-extension NSColor: HSLuvInitializable, HSLuvConvertible {
+private typealias SystemColor = NSColor
+#endif
 
+import CoreGraphics
+
+extension SystemColor: HSLuvInitializable, HSLuvConvertible {
     /// Convenience function to wrap the behavior of getRed(red:green:blue:alpha:)
     public func getRGB() -> (red: CGFloat, green: CGFloat, blue: CGFloat) {
         var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
@@ -35,4 +44,4 @@ extension NSColor: HSLuvInitializable, HSLuvConvertible {
 
 }
 
-extension NSColor: HPLuvInitializable, HPLuvConvertible {}
+extension SystemColor: HPLuvInitializable, HPLuvConvertible {}
