@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0940"
+   LastUpgradeVersion = "1130"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -27,6 +27,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CBDA801B1B2D2C740010C653"
+            BuildableName = "HSLuvSwift.framework"
+            BlueprintName = "HSLuvMac"
+            ReferencedContainer = "container:HSLuvSwift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -49,17 +58,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CBDA801B1B2D2C740010C653"
-            BuildableName = "HSLuvSwift.framework"
-            BlueprintName = "HSLuvMac"
-            ReferencedContainer = "container:HSLuvSwift.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -80,8 +78,6 @@
             ReferencedContainer = "container:HSLuvSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
