@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.source_files     = 'Sources/HSLuvSwift/*.{swift}'
   s.frameworks       = 'Foundation'
-  s.swift_version    = '4.0'
+  s.swift_version    = '5.0'
 
   s.ios.deployment_target = '10.0'
   s.ios.frameworks   = 'UIKit'
