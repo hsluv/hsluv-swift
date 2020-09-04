@@ -817,6 +817,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/$(PROJECT_NAME)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvSwiftMac;
 				PRODUCT_NAME = HSLuvSwift;
 				SKIP_INSTALL = YES;
@@ -843,6 +844,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/$(PROJECT_NAME)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvSwiftMac;
 				PRODUCT_NAME = HSLuvSwift;
 				SKIP_INSTALL = YES;
