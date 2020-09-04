@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "HSLuvSwift"
 
-  s.version          = "2.0.0"
+  s.version          = "2.1.0"
 
   s.summary          = "Swift port of HSLuv, a human-friendly alternative to HSL"
   s.homepage         = "https://github.com/hsluv/hsluv-swift"
@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
 
   s.source_files     = 'Sources/HSLuvSwift/*.{swift}'
   s.frameworks       = 'Foundation'
+  s.swift_version    = '4.0'
 
   s.ios.deployment_target = '10.0'
   s.ios.frameworks   = 'UIKit'
