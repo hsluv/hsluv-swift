@@ -54,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A41989C2502248100DD4ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A7F6F7625019B0600B57E5B /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		3ABA53B12402EE2300F37E85 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ABA53B22402EE2300F37E85 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
@@ -61,7 +62,7 @@
 		3ABA53B42402EE2300F37E85 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		3ABA53B52402EE2300F37E85 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		CB328E391B3205050061A872 /* Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snapshot.swift; path = Tests/HSLuvSwiftTests/Snapshot.swift; sourceTree = SOURCE_ROOT; };
-		CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "snapshot-rev4.json"; path = "Tests/HSLuvSwiftTests/Assets/snapshot-rev4.json"; sourceTree = SOURCE_ROOT; };
+		CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "snapshot-rev4.json"; path = "Tests/HSLuvSwiftTests/Resources/snapshot-rev4.json"; sourceTree = SOURCE_ROOT; };
 		CB37B9051B2E7994009E63A5 /* HSLuvSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSLuvSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB604FB91B30734C009A99D1 /* HSLuvTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSLuvTests.swift; path = Tests/HSLuvSwiftTests/HSLuvTests.swift; sourceTree = SOURCE_ROOT; };
 		CB6AB27F1B3083890075AF04 /* HSLuvMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSLuvMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +125,7 @@
 				CB328E391B3205050061A872 /* Snapshot.swift */,
 				CBDA802A1B2D2C740010C653 /* AppKit */,
 				CB604FAA1B3071DC009A99D1 /* iOS */,
-				CBD1E3061B30B2C800E49F9B /* Assets */,
+				CBD1E3061B30B2C800E49F9B /* Resources */,
 				3A46031C2409C03A008B7C02 /* Supporting Files */,
 			);
 			path = HSLuvSwiftTests;
@@ -133,6 +134,7 @@
 		3A46031C2409C03A008B7C02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A41989C2502248100DD4ED1 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,21 +195,20 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		CBD1E3061B30B2C800E49F9B /* Assets */ = {
+		CBD1E3061B30B2C800E49F9B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */,
 			);
-			name = Assets;
-			path = ..;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CBDA80121B2D2C740010C653 = {
 			isa = PBXGroup;
 			children = (
-				CBCAD5361B2FBEAF00D0366A /* Podspec Metadata */,
 				CBDA801E1B2D2C740010C653 /* Sources */,
 				CB37B9121B2E7994009E63A5 /* Tests */,
+				CBCAD5361B2FBEAF00D0366A /* Podspec Metadata */,
 				CBDA801D1B2D2C740010C653 /* Products */,
 			);
 			sourceTree = "<group>";

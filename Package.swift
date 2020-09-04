@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -13,7 +13,8 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "HSLuvSwift",
-            targets: ["HSLuvSwift"]),
+            targets: ["HSLuvSwift"]
+        ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,9 +25,15 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "HSLuvSwift",
-            dependencies: []),
+            dependencies: [],
+            exclude: ["Info.plist"]
+        ),
         .testTarget(
             name: "HSLuvSwiftTests",
-            dependencies: ["HSLuvSwift"])
+            dependencies: ["HSLuvSwift"],
+            exclude: ["Info.plist"],
+            resources: [.copy("Resources/snapshot-rev4.json")],
+            swiftSettings: [.define("SPM")]
+        )
     ]
 )
