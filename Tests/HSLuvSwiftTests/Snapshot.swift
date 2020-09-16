@@ -31,9 +31,17 @@ class Snapshot {
     }()
 
     static var stable: SnapshotType = {
+        // SPM has a special way of accessing bundle resources,
+        // therefore we need to handle this differenlty than in the project.
+        #if SPM
+        guard let url = Bundle.module.url(forResource: "snapshot-rev4", withExtension: "json") else {
+            fatalError("Snapshot JSON file is missing")
+        }
+        #else
         guard let url = Bundle(for: Snapshot.self).url(forResource: "snapshot-rev4", withExtension: "json") else {
             fatalError("Snapshot JSON file is missing")
         }
+        #endif
 
         let jsonData = try! Data(contentsOf: url, options: .mappedIfSafe)
         let jsonResult = try! JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers) as! SnapshotType

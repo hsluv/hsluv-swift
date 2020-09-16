@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "HSLuvSwift"
 
-  s.version          = "2.1.0"
+  s.version          = "2.2.0"
 
   s.summary          = "Swift port of HSLuv, a human-friendly alternative to HSL"
   s.homepage         = "https://github.com/hsluv/hsluv-swift"

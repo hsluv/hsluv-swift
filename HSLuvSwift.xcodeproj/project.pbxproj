@@ -54,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A41989C2502248100DD4ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A7F6F7625019B0600B57E5B /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		3ABA53B12402EE2300F37E85 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ABA53B22402EE2300F37E85 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
@@ -61,7 +62,7 @@
 		3ABA53B42402EE2300F37E85 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		3ABA53B52402EE2300F37E85 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		CB328E391B3205050061A872 /* Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snapshot.swift; path = Tests/HSLuvSwiftTests/Snapshot.swift; sourceTree = SOURCE_ROOT; };
-		CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "snapshot-rev4.json"; path = "Tests/HSLuvSwiftTests/Assets/snapshot-rev4.json"; sourceTree = SOURCE_ROOT; };
+		CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "snapshot-rev4.json"; path = "Tests/HSLuvSwiftTests/Resources/snapshot-rev4.json"; sourceTree = SOURCE_ROOT; };
 		CB37B9051B2E7994009E63A5 /* HSLuvSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSLuvSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB604FB91B30734C009A99D1 /* HSLuvTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSLuvTests.swift; path = Tests/HSLuvSwiftTests/HSLuvTests.swift; sourceTree = SOURCE_ROOT; };
 		CB6AB27F1B3083890075AF04 /* HSLuvMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSLuvMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +125,7 @@
 				CB328E391B3205050061A872 /* Snapshot.swift */,
 				CBDA802A1B2D2C740010C653 /* AppKit */,
 				CB604FAA1B3071DC009A99D1 /* iOS */,
-				CBD1E3061B30B2C800E49F9B /* Assets */,
+				CBD1E3061B30B2C800E49F9B /* Resources */,
 				3A46031C2409C03A008B7C02 /* Supporting Files */,
 			);
 			path = HSLuvSwiftTests;
@@ -133,6 +134,7 @@
 		3A46031C2409C03A008B7C02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A41989C2502248100DD4ED1 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,21 +195,20 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		CBD1E3061B30B2C800E49F9B /* Assets */ = {
+		CBD1E3061B30B2C800E49F9B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				CB339EEB1B31EE210067FDAF /* snapshot-rev4.json */,
 			);
-			name = Assets;
-			path = ..;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CBDA80121B2D2C740010C653 = {
 			isa = PBXGroup;
 			children = (
-				CBCAD5361B2FBEAF00D0366A /* Podspec Metadata */,
 				CBDA801E1B2D2C740010C653 /* Sources */,
 				CB37B9121B2E7994009E63A5 /* Tests */,
+				CBCAD5361B2FBEAF00D0366A /* Podspec Metadata */,
 				CBDA801D1B2D2C740010C653 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -359,7 +360,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Clay Smith";
 				TargetAttributes = {
 					CB37B9041B2E7994009E63A5 = {
@@ -536,6 +537,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/$(PROJECT_NAME)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvSwiftiOS;
 				PRODUCT_NAME = HSLuvSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -546,7 +548,6 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -565,6 +566,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/$(PROJECT_NAME)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvSwiftiOS;
 				PRODUCT_NAME = HSLuvSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -575,7 +577,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -626,14 +627,12 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/HSLuvSwiftTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuviOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -646,7 +645,6 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/HSLuvSwiftTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuviOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -654,7 +652,6 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -714,6 +711,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -738,14 +736,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VALID_ARCHS = "i386 x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -773,6 +770,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -791,14 +789,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALID_ARCHS = "i386 x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -820,6 +817,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/$(PROJECT_NAME)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvSwiftMac;
 				PRODUCT_NAME = HSLuvSwift;
 				SKIP_INSTALL = YES;
@@ -846,6 +844,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/$(PROJECT_NAME)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.claysmith.HSLuvSwiftMac;
 				PRODUCT_NAME = HSLuvSwift;
 				SKIP_INSTALL = YES;

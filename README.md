@@ -14,10 +14,10 @@ of [Clay Smith](https://github.com/stphnclysmth)
 
 ## USAGE
 
-This framework adds a single initializer on the OS-specific color class to create a color from HSLuv parameters. The initializer takes the same parameters on both OSX and iOS.
+This framework adds a single initializer on the OS-specific color class to create a color from HSLuv parameters. The initializer takes the same parameters on both macOS and iOS.
 
 ```swift
-// OSX
+// macOS
 let color = NSColor(hue: 360.0, saturation: 100.0, lightness: 100.0, alpha: 1.0)
 
 // iOS
@@ -43,7 +43,7 @@ If you want to use the Swift Package Manager as integration method, either use X
 Add `pod 'HSLuvSwift'` to your target. Since this is a Swift dynamic framework, you must also tell CocoaPods to `use_frameworks!` instead of static libraries.
 
 ```ruby
-platform :ios, '8.0' # or, :osx, '10.10'
+platform :ios, '10.0' # or, :osx, '10.10'
 use_frameworks!
 
 target 'YourProject' do
