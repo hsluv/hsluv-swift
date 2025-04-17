@@ -7,11 +7,10 @@ on:
 
 jobs:
   test:
-    # TODO: build on newer macOS
     runs-on: macos-13
     strategy:
       matrix:
-        params: [ '-scheme HSLuvMac -sdk macosx', '-scheme HSLuviOS -sdk iphonesimulator -destination "platform=iOS Simulator,id=54539B3E-FAFA-47FE-969D-477906BF674D,OS=17.2"' ]
+        params: [ '-scheme HSLuvMac -sdk macosx', '-scheme HSLuviOS -sdk iphonesimulator -destination "platform=iOS Simulator,name:iPhone 14"' ]
     steps:
       - uses: actions/checkout@v4
       # https://github.com/actions/runner-images/discussions/8367#discussioncomment-12685592
@@ -19,4 +18,4 @@ jobs:
       - name: Select XCode
         run: sudo xcode-select -s /Applications/Xcode_14.1.app
       - name: Test
-        run: xcodebuild ${{ matrix.params }} test
+        run: xcodebuild ${{ matrix.params }} CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO test
