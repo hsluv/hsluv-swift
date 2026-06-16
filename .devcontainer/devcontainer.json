@@ -1,0 +1,14 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "swiftlang.swift-vscode",
+        "github.vscode-github-actions",
+        "mhutchie.git-graph"
+      ]
+    }
+  }
+}
