@@ -10,8 +10,10 @@ jobs:
     name: Swift ${{ matrix.swift }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
-        os: [ubuntu-latest]
+        # Swift 5.10 toolchains link libxml2.so.2, which ubuntu-26.04 (ubuntu-latest) no longer ships
+        os: [ubuntu-24.04]
         swift: ["5", "6"]
     steps:
       # Perhaps we should switch to swift-actions/setup-swift, but they are undergoing a major refactor
